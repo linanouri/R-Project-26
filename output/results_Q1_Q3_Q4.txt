@@ -1,0 +1,118 @@
+
+================ Q1 ================
+
+	Pearson's Chi-squared test
+
+data:  tab_q1
+X-squared = 46171, df = 28, p-value < 2.2e-16
+
+Cramér's V = 0.374  (2 columns -> 0.1 small, 0.3 medium, 0.5 large)
+# A tibble: 29 × 5
+   family                                    Rural   Urban diff_pts std_residual
+   <chr>                                     <dbl>   <dbl>    <dbl>        <dbl>
+ 1 Divers équipements Sports de nature     20.7     4.13   16.6         143.    
+ 2 Equipement d'activités de forme et de …  1.41    6.98   -5.57        -80.7   
+ 3 Salle ou terrain spécialisé              2.20    7.20   -5.00        -68.4   
+ 4 Boulodrome                              10.9     6.19    4.70         48.1   
+ 5 Salle multisports                        3.42    7.94   -4.52        -56.5   
+ 6 Court de tennis                          9.80   13.4    -3.59        -32.3   
+ 7 Terrain extérieur de petits jeux colle…  2.82    5.95   -3.13        -44.2   
+ 8 Equipement d'athlétisme                  1.56    4.25   -2.70        -46.5   
+ 9 Salle non spécialisée                    6.10    3.58    2.52         33.6   
+10 Equipement équestre                      5.86    3.59    2.27         30.6   
+11 Salle de combat                          1.23    3.28   -2.06        -40.1   
+12 Site d'activités aquatiques et nautiqu…  4.42    2.43    1.99         31.3   
+13 Multisports/City-stades                  6.71    8.46   -1.76        -19.1   
+14 Terrain de grands jeux                  13.0    11.7     1.31         11.4   
+15 Bassin de natation                       1.39    2.37   -0.984       -20.9   
+16 Structure Artificielle d'Escalade        0.539   1.35   -0.814       -24.3   
+17 Site d'activités aériennes               1.09    0.386   0.704        23.4   
+18 Pas de tir                               1.34    1.85   -0.511       -11.8   
+19 Circuit/piste de sports mécaniques       0.636   0.278   0.358        15.1   
+20 Equipement & piste de ski                0.379   0.0331  0.345        21.6   
+21 Equipement de cyclisme                   0.809   0.640   0.169         5.71  
+22 Bowling                                  0.0340  0.149  -0.115       -11.0   
+23 Parcours de golf                         0.494   0.605  -0.111        -4.33  
+24 Skatepark & vélo Freestyle               1.04    1.15   -0.102        -2.82  
+25 Parcours sportif/santé                   0.859   0.807   0.0518        1.64  
+26 Aire de sports de glaces                 0.0352  0.0782 -0.0430       -5.22  
+27 Site de modélisme                        0.176   0.194  -0.0175       -1.17  
+28 Divers équipements                       0.122   0.110   0.0118        0.998 
+29 Mur et fronton                           0.901   0.903  -0.00166      -0.0503
+
+================ Q3 ================
+
+	Pearson's Chi-squared test
+
+data:  tab_q3
+X-squared = 7143.3, df = 36, p-value < 2.2e-16
+
+Cramér's V = 0.062  (7x7 table -> 0.04 small, 0.12 medium, 0.20 large)
+
+	Spearman's rank correlation rho
+
+data:  as.integer(q3$density) and as.integer(q3$service_period)
+S = 4.5074e+15, p-value < 2.2e-16
+alternative hypothesis: true rho is not equal to 0
+sample estimates:
+       rho 
+0.05424424 
+
+
+	Kruskal-Wallis rank sum test
+
+data:  as.integer(service_period) by density
+Kruskal-Wallis chi-squared = 1352.2, df = 6, p-value < 2.2e-16
+
+Epsilon-squared = 0.0044 (0.01 small, 0.08 medium, 0.26 large)
+
+Pre-1985 configuration, rural vs urban, adjusted for facility type:
+# A tibble: 1 × 10
+  outcome                     n n_strata pct_rural pct_urban crude_OR
+  <chr>                   <int>    <int>     <dbl>     <dbl>    <dbl>
+1 Configured before 1985 305223      161      32.5      39.2    0.745
+  adjusted_OR ci_low ci_high   p_value
+        <dbl>  <dbl>   <dbl>     <dbl>
+1       0.726  0.714   0.739 1.82e-297
+# A tibble: 16 × 4
+   family                              urban_rural pct_pre_1985     n
+   <chr>                               <chr>              <dbl> <int>
+ 1 Boulodrome                          Rural               25.6 17593
+ 2 Boulodrome                          Urban               36.0  9134
+ 3 Court de tennis                     Rural               43.1 16211
+ 4 Court de tennis                     Urban               52.5 20545
+ 5 Divers équipements Sports de nature Rural               23.0 28672
+ 6 Divers équipements Sports de nature Urban               24.3  5410
+ 7 Equipement équestre                 Rural               12.0  9256
+ 8 Equipement équestre                 Urban               20.9  5411
+ 9 Multisports/City-stades             Rural               16.3 10838
+10 Multisports/City-stades             Urban               30.8 12331
+11 Salle multisports                   Rural               39.1  5660
+12 Salle multisports                   Urban               54.0 12249
+13 Salle non spécialisée               Rural               43.0 10084
+14 Salle non spécialisée               Urban               43.4  5188
+15 Terrain de grands jeux              Rural               56.2 21495
+16 Terrain de grands jeux              Urban               52.8 17760
+
+================ Q4 ================
+# A tibble: 8 × 11
+  outcome                                n n_strata pct_rural pct_urban crude_OR
+  <chr>                              <int>    <int>     <dbl>     <dbl>    <dbl>
+1 Changing rooms (reliable)         132572       47      64.8      82.6    0.386
+2 Showers (checkbox)                135814       48      61.1      76.8    0.475
+3 Toilets (checkbox)                135814       48      73.4      86.5    0.43 
+4 Lighting, outdoor only (checkbox)  86427       39      47.3      52.6    0.81 
+5 Changing rooms (reliable)          94256       47      71.1      86.3    0.39 
+6 Showers (checkbox)                 95566       48      67.6      80.7    0.499
+7 Toilets (checkbox)                 95524       47      79.6      90.2    0.423
+8 Lighting, outdoor only (checkbox)  58093       34      51.8      56.1    0.84 
+  adjusted_OR ci_low ci_high   p_value sample                      
+        <dbl>  <dbl>   <dbl>     <dbl> <chr>                       
+1       0.38   0.37    0.391 0         All facilities              
+2       0.453  0.442   0.465 0         All facilities              
+3       0.477  0.463   0.491 0         All facilities              
+4       0.724  0.704   0.745 7.48e-112 All facilities              
+5       0.362  0.349   0.376 0         Well-documented records only
+6       0.441  0.427   0.456 0         Well-documented records only
+7       0.451  0.433   0.469 0         Well-documented records only
+8       0.735  0.709   0.761 1.22e- 67 Well-documented records only

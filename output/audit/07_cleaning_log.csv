@@ -1,0 +1,3 @@
+step,rows_before,rows_after,decision
+1a_out_of_service,333585,333109,Removed installations flagged hors service (inst_hs_bool == 'Oui').
+1b_territory,333109,330600,Kept 101 departments; removed overseas collectivities and missing dep_code.

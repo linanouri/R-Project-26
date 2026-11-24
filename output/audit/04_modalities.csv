@@ -1,0 +1,359 @@
+variable,modality,N,pct
+equip_zone_dsi,,333574,100
+equip_zone_dsi,"{""""type"""": """"GeometryCollection"""", """"geometries"""": [{""""coordinates"""": [[[9.22091685391996, 41.37609080127646], [9.227073916779801, 41.373351242643196], [9.22468745830588, 41.37244387598537], [9.22080548585322, 41.3741153310649], [9.22091685391996, 41.37609080127646]]], """"type"""": """"Polygon""""}]}",1,0
+equip_zone_dsi,"{""""type"""": """"GeometryCollection"""", """"geometries"""": [{""""coordinates"""": [[[-0.23166463418149874, 49.28151772053397], [-0.22571981556870924, 49.27584649251315], [-0.22301196625184616, 49.28047611524687], [-0.23166463418149874, 49.28151772053397]]], """"type"""": """"Polygon""""}]}",1,0
+equip_zone_dsi,"{""""type"""": """"GeometryCollection"""", """"geometries"""": [{""""coordinates"""": [[[-2.8946506603133173, 48.704227933578665], [-2.924713415230258, 48.754814226197965], [-2.931768959751622, 48.75157822771047], [-2.9425056579367492, 48.74348731960694], [-2.9342230621944054, 48.73741828361585], [-2.9369839274416165, 48.732764859751256], [-2.9406650811044983, 48.72790865387503], [-2.940971843909722, 48.723861457369], [-2.9336095365831056, 48.72021870203022], [-2.930541908530671, 48.72143298312395], [-2.929621620114972, 48.71859961497145], [-2.9244066524250343, 48.71030097582303], [-2.9041603072766122, 48.701596054328974], [-2.897104762756072, 48.70179851146503], [-2.8946506603133173, 48.704227933578665]]], """"type"""": """"Polygon""""}]}",1,0
+equip_zone_dsi,"{""""type"""": """"GeometryCollection"""", """"geometries"""": [{""""coordinates"""": [[[0.48265045583184474, 49.36454714674534], [0.48858803542154305, 49.36611122581829], [0.4897888942169857, 49.36524229914525], [0.48858803542154305, 49.36372164051613], [0.4865198897183518, 49.36211403597176], [0.4847186015264242, 49.35968080479876], [0.4827171702001749, 49.360245672765444], [0.4818498832939042, 49.35959390145851], [0.47818059253057754, 49.36098433647106], [0.47844745003982325, 49.36376508855835], [0.4798484519676549, 49.3639388803426], [0.48265045583184474, 49.36454714674534]]], """"type"""": """"Polygon""""}]}",1,0
+equip_zone_dsi,"{""""type"""": """"GeometryCollection"""", """"geometries"""": [{""""coordinates"""": [[[-3.396700630918275, 47.73186021675676], [-3.396253940391631, 47.732367214468894], [-3.389023137490142, 47.730282858975244], [-3.3906423906505267, 47.729888512064946], [-3.3921220530200458, 47.729606833872225], [-3.3947184417055496, 47.73039552897248], [-3.396533121970947, 47.730940097190114], [-3.396700630918275, 47.73186021675676]]], """"type"""": """"Polygon""""}]}",1,0
+equip_zone_dsi,"{""""type"""": """"GeometryCollection"""", """"geometries"""": [{""""coordinates"""": [[[-3.0975355308533494, 47.484173515120574], [-3.097397777735324, 47.48501134281264], [-3.093265184190585, 47.48482516003551], [-3.093448855015282, 47.48314948535082], [-3.0975355308533494, 47.484173515120574]]], """"type"""": """"Polygon""""}]}",1,0
+equip_zone_dsi,"{""""type"""": """"GeometryCollection"""", """"geometries"""": [{""""coordinates"""": [[[7.657155331948559, 48.55904207489283], [7.65764031345978, 48.55412008076735], [7.671058135283715, 48.55379906451651], [7.663621752104518, 48.56278674963434], [7.657155331948559, 48.55904207489283]]], """"type"""": """"Polygon""""}]}",1,0
+equip_zone_dsi,"{""""type"""": """"GeometryCollection"""", """"geometries"""": [{""""coordinates"""": [[[0.20216260908469508, 49.709482482626385], [0.19575083799489335, 49.71707503751446], [0.1733482643078048, 49.699090747182424], [0.17906478311056162, 49.69534318194712], [0.20216260908469508, 49.709482482626385]]], """"type"""": """"Polygon""""}]}",1,0
+equip_zone_dsi,"{""""type"""": """"GeometryCollection"""", """"geometries"""": [{""""coordinates"""": [[[0.10861098956189608, 49.49089810796937], [0.11652400834898913, 49.49066139454928], [0.11647194901453872, 49.48969198479131], [0.10854157711617063, 49.48996251967796], [0.10861098956189608, 49.49089810796937]]], """"type"""": """"Polygon""""}]}",1,0
+equip_zone_dsi,"{""""type"""": """"GeometryCollection"""", """"geometries"""": [{""""coordinates"""": [[[6.536639926169073, 43.1651005847298], [6.621182122934812, 43.15766040980921], [6.614120593739358, 43.16681741950248], [6.608824446842249, 43.17296901453685], [6.60392060712266, 43.174113428976625], [6.6056859894209765, 43.17640219352023], [6.601959071233949, 43.18298191374399], [6.58901293437458, 43.186700572397285], [6.579793715701101, 43.18698661368026], [6.578224486991047, 43.18598546332606], [6.575086029570826, 43.18884584934804], [6.569986036261923, 43.18770171102389], [6.566651425253468, 43.18884584934804], [6.561551431944594, 43.18984695278945], [6.552136059682908, 43.187987747615495], [6.54154376588869, 43.18412614053335], [6.535855311814032, 43.178833911855065], [6.532128393627005, 43.1743995292357], [6.534286083103922, 43.17082317965966], [6.538405308468441, 43.17025094429263], [6.536639926169073, 43.1651005847298]]], """"type"""": """"Polygon""""}]}",1,0
+equip_zone_dsi,"{""""type"""": """"GeometryCollection"""", """"geometries"""": [{""""coordinates"""": [[[-2.2195866739414782, 47.008161876101724], [-2.2195652162695296, 47.0079277658042], [-2.2189429437785577, 47.007898501944425], [-2.2195866739414782, 47.008161876101724]]], """"type"""": """"Polygon""""}]}",1,0
+equip_annee_fin_aot,,333570,100
+equip_annee_fin_aot,2030,4,0
+equip_annee_fin_aot,2035,3,0
+equip_annee_fin_aot,2026,2,0
+equip_annee_fin_aot,2029,2,0
+equip_annee_fin_aot,2027,1,0
+equip_annee_fin_aot,2024,1,0
+equip_annee_fin_aot,2031,1,0
+equip_annee_fin_aot,2028,1,0
+equip_aot_cot,,333559,99.99
+equip_aot_cot,Oui,20,0.01
+equip_aot_cot,Non,6,0
+equip_homo_periode,,327993,98.32
+equip_homo_periode,A partir de 2005,3017,0.9
+equip_homo_periode,1995-2004,2011,0.6
+equip_homo_periode,1985-1994,338,0.1
+equip_homo_periode,1975-1984,95,0.03
+equip_homo_periode,1965-1974,80,0.02
+equip_homo_periode,1945-1964,38,0.01
+equip_homo_periode,Avant 1945,13,0
+equip_cogest_type,,302989,90.83
+equip_cogest_type,Commune,12318,3.69
+equip_cogest_type,Association(s),12055,3.61
+equip_cogest_type,EPCI,1736,0.52
+equip_cogest_type,Etablissement privé commercial,1413,0.42
+equip_cogest_type,Etablissement Public,1027,0.31
+equip_cogest_type,Département,839,0.25
+equip_cogest_type,Etablissement d'enseignement privé,384,0.12
+equip_cogest_type,Privé non commercial,351,0.11
+equip_cogest_type,Région,229,0.07
+equip_cogest_type,Etat,179,0.05
+equip_cogest_type,Autre,43,0.01
+equip_cogest_type,Multi-propriétaire,20,0.01
+equip_cogest_type,other,2,0
+equip_propsec_type,,277204,83.1
+equip_propsec_type,Commune,40533,12.15
+equip_propsec_type,Etablissement privé commercial,3193,0.96
+equip_propsec_type,EPCI,2825,0.85
+equip_propsec_type,Association(s),2598,0.78
+equip_propsec_type,Privé non commercial,2173,0.65
+equip_propsec_type,Etat,1668,0.5
+equip_propsec_type,Département,1096,0.33
+equip_propsec_type,Région,697,0.21
+equip_propsec_type,Etablissement Public,656,0.2
+equip_propsec_type,Etablissement d'enseignement privé,622,0.19
+equip_propsec_type,Multi-propriétaire,224,0.07
+equip_propsec_type,Autre,96,0.03
+equip_travaux_periode,,260866,78.2
+equip_travaux_periode,A partir de 2005,38586,11.57
+equip_travaux_periode,1995-2004,29410,8.82
+equip_travaux_periode,1985-1994,3668,1.1
+equip_travaux_periode,1975-1984,848,0.25
+equip_travaux_periode,Avant 1975,198,0.06
+equip_travaux_periode,1965-1974,5,0
+equip_travaux_periode,1945-1964,3,0
+equip_travaux_periode,Avant 1945,1,0
+equip_erp_cat,,219137,65.69
+equip_erp_cat,5,58455,17.52
+equip_erp_cat,3,20807,6.24
+equip_erp_cat,4,17241,5.17
+equip_erp_cat,2,12370,3.71
+equip_erp_cat,1,5561,1.67
+equip_erp_cat,0,13,0
+equip_erp_cat,2019,1,0
+categorie,,208108,62.39
+categorie,structurant,88553,26.55
+categorie,proximité,36924,11.07
+inst_acc_handi_type,"[""""Handicap moteur""""]",192620,57.74
+inst_acc_handi_type,,128629,38.56
+inst_acc_handi_type,"[""""Handicap moteur"""", """"Handicap sensoriel""""]",9566,2.87
+inst_acc_handi_type,"[""""Handicap sensoriel"""", """"Handicap moteur""""]",1368,0.41
+inst_acc_handi_type,"[""""Non accessible""""]",532,0.16
+inst_acc_handi_type,"[""""Handicap sensoriel""""]",428,0.13
+inst_acc_handi_type,"[""""Handicap sensoriel;Handicap moteur""""]",273,0.08
+inst_acc_handi_type,"[""""Handicap moteur;Handicap sensoriel""""]",164,0.05
+inst_acc_handi_type,"[""""Non accessible"""", """"Handicap sensoriel""""]",2,0
+inst_acc_handi_type,"[""""Non accessible"""", """"Handicap moteur""""]",2,0
+inst_acc_handi_type,"[""""Non accessible;Handicap sensoriel""""]",1,0
+equip_service_periode,1995-2004,70762,21.21
+equip_service_periode,1985-1994,67224,20.15
+equip_service_periode,1975-1984,52840,15.84
+equip_service_periode,A partir de 2005,47755,14.32
+equip_service_periode,,39413,11.81
+equip_service_periode,1965-1974,28959,8.68
+equip_service_periode,1945-1964,15998,4.8
+equip_service_periode,Avant 1945,10634,3.19
+equip_vest_ens,0,248872,74.61
+equip_vest_ens,1,45583,13.66
+equip_vest_ens,2,18630,5.58
+equip_vest_ens,,17096,5.12
+equip_vest_ens,3,1599,0.48
+equip_vest_ens,4,1154,0.35
+equip_vest_ens,5,216,0.06
+equip_vest_ens,6,211,0.06
+equip_vest_ens,8,91,0.03
+equip_vest_ens,7,32,0.01
+equip_vest_ens,10,23,0.01
+equip_vest_ens,9,14,0
+equip_vest_ens,12,8,0
+equip_vest_ens,11,8,0
+equip_vest_ens,25,7,0
+equip_vest_ens,26,5,0
+equip_vest_ens,30,5,0
+equip_vest_ens,80,4,0
+equip_vest_ens,13,3,0
+equip_vest_ens,15,3,0
+equip_vest_ens,16,3,0
+equip_vest_ens,20,3,0
+equip_vest_ens,24,2,0
+equip_vest_ens,14,2,0
+equip_vest_ens,28,2,0
+equip_vest_ens,240,2,0
+equip_vest_ens,19,2,0
+equip_vest_ens,-5,1,0
+equip_vest_ens,108,1,0
+equip_vest_ens,-1,1,0
+equip_vest_ens,29,1,0
+equip_vest_ens,34,1,0
+equip_gest_type,Commune,199511,59.81
+equip_gest_type,Association(s),41466,12.43
+equip_gest_type,Etablissement privé commercial,28428,8.52
+equip_gest_type,EPCI,21837,6.55
+equip_gest_type,,11385,3.41
+equip_gest_type,Etablissement Public,8478,2.54
+equip_gest_type,Département,7378,2.21
+equip_gest_type,Etablissement d'enseignement privé,4675,1.4
+equip_gest_type,Privé non commercial,3886,1.16
+equip_gest_type,Etat,3050,0.91
+equip_gest_type,Région,2993,0.9
+equip_gest_type,Multi-propriétaire,288,0.09
+equip_gest_type,Autre,208,0.06
+equip_gest_type,other,2,0
+equip_nature,Découvert,179323,53.76
+equip_nature,Intérieur,87692,26.29
+equip_nature,Site naturel aménagé,38410,11.51
+equip_nature,Site naturel,17202,5.16
+equip_nature,Extérieur couvert,4607,1.38
+equip_nature,,3733,1.12
+equip_nature,Site artificiel,1891,0.57
+equip_nature,Découvrable,727,0.22
+equip_prop_type,Commune,235774,70.68
+equip_prop_type,Etablissement privé commercial,25916,7.77
+equip_prop_type,EPCI,15445,4.63
+equip_prop_type,Multi-propriétaire,9187,2.75
+equip_prop_type,Privé non commercial,9037,2.71
+equip_prop_type,Département,8580,2.57
+equip_prop_type,Association(s),7963,2.39
+equip_prop_type,Région,6237,1.87
+equip_prop_type,Etat,4769,1.43
+equip_prop_type,Etablissement d'enseignement privé,3845,1.15
+equip_prop_type,Etablissement Public,3566,1.07
+equip_prop_type,,3087,0.93
+equip_prop_type,Autre,179,0.05
+dens_lib,Rural à habitat dispersé,81203,24.34
+dens_lib,Bourgs ruraux,70907,21.26
+dens_lib,Grands centres urbains,66623,19.97
+dens_lib,Centres urbains intermédiaires,37126,11.13
+dens_lib,Ceintures urbaines,32686,9.8
+dens_lib,Petites villes,23743,7.12
+dens_lib,Rural à habitat très dispersé,18741,5.62
+dens_lib,,2556,0.77
+aca_nom,Académie de Nantes,23439,7.03
+aca_nom,Académie de Toulouse,22298,6.68
+aca_nom,Académie de Bordeaux,19558,5.86
+aca_nom,Académie de Grenoble,19298,5.79
+aca_nom,Académie de Rennes,19282,5.78
+aca_nom,Académie de Montpellier,17709,5.31
+aca_nom,Académie de Normandie,16826,5.04
+aca_nom,Académie d'Orléans-Tours,16718,5.01
+aca_nom,Académie de Versailles,16555,4.96
+aca_nom,Académie de Nancy-Metz,15238,4.57
+aca_nom,Académie de Lille,14499,4.35
+aca_nom,Académie d'Aix-Marseille,14061,4.22
+aca_nom,Académie de Lyon,13168,3.95
+aca_nom,Académie d'Amiens,11885,3.56
+aca_nom,Académie de Poitiers,10885,3.26
+aca_nom,Académie de Créteil,10603,3.18
+aca_nom,Académie de Clermont-Ferrand,10236,3.07
+aca_nom,Académie de Dijon,9631,2.89
+aca_nom,Académie de Strasbourg,8446,2.53
+aca_nom,Académie de Reims,8186,2.45
+aca_nom,Académie de Besançon,8038,2.41
+aca_nom,Académie de Nice,7498,2.25
+aca_nom,Académie de Limoges,5725,1.72
+aca_nom,Académie de La Réunion,3040,0.91
+aca_nom,Académie de Paris,2930,0.88
+aca_nom,Académie de Corse,1311,0.39
+aca_nom,Académie de la Guadeloupe,1255,0.38
+aca_nom,Vice-Réctorat Nouvelle-Calédonie,1212,0.36
+aca_nom,Académie de Martinique,1195,0.36
+aca_nom,Académie de la Guyane,990,0.3
+aca_nom,Vice-Réctorat Polynésie Française,990,0.3
+aca_nom,Académie de Mayotte,438,0.13
+aca_nom,,375,0.11
+aca_nom,Vice-Réctorat Wallis-et-Futuna,67,0.02
+reg_nom,Auvergne-Rhône-Alpes,42749,12.82
+reg_nom,Occitanie,40008,11.99
+reg_nom,Nouvelle-Aquitaine,36168,10.84
+reg_nom,Grand Est,31880,9.56
+reg_nom,Île-de-France,30088,9.02
+reg_nom,Hauts-de-France,26411,7.92
+reg_nom,Pays de la Loire,23439,7.03
+reg_nom,Provence-Alpes-Côte d'Azur,21685,6.5
+reg_nom,Bretagne,19282,5.78
+reg_nom,Bourgogne-Franche-Comté,17669,5.3
+reg_nom,Normandie,16787,5.03
+reg_nom,Centre-Val de Loire,16718,5.01
+reg_nom,La Réunion,3040,0.91
+reg_nom,Corse,1311,0.39
+reg_nom,Guadeloupe,1212,0.36
+reg_nom,Nouvelle-Calédonie,1212,0.36
+reg_nom,Martinique,1195,0.36
+reg_nom,Guyane,990,0.3
+reg_nom,Polynésie française,990,0.3
+reg_nom,Mayotte,438,0.13
+reg_nom,,164,0.05
+reg_nom,Wallis-et-Futuna,67,0.02
+reg_nom,Saint-Pierre-et-Miquelon,39,0.01
+reg_nom,Saint-Martin,27,0.01
+reg_nom,Saint-Barthélemy,16,0
+reg_slug,auvergne-rhone-alpes,42749,12.82
+reg_slug,occitanie,40008,11.99
+reg_slug,nouvelle-aquitaine,36168,10.84
+reg_slug,grand-est,31880,9.56
+reg_slug,ile-de-france,30088,9.02
+reg_slug,hauts-de-france,26411,7.92
+reg_slug,pays-de-la-loire,23439,7.03
+reg_slug,provence-alpes-cote-d-azur,21685,6.5
+reg_slug,bretagne,19282,5.78
+reg_slug,bourgogne-franche-comte,17669,5.3
+reg_slug,normandie,16787,5.03
+reg_slug,centre-val-de-loire,16718,5.01
+reg_slug,la-reunion,3040,0.91
+reg_slug,corse,1311,0.39
+reg_slug,guadeloupe,1212,0.36
+reg_slug,nouvelle-caledonie,1212,0.36
+reg_slug,martinique,1195,0.36
+reg_slug,guyane,990,0.3
+reg_slug,polynesie-francaise,990,0.3
+reg_slug,mayotte,438,0.13
+reg_slug,,164,0.05
+reg_slug,wallis-et-futuna,67,0.02
+reg_slug,saint-pierre-et-miquelon,39,0.01
+reg_slug,saint-martin,27,0.01
+reg_slug,saint-barthelemy,16,0
+reg_code,84,42749,12.82
+reg_code,76,40008,11.99
+reg_code,75,36168,10.84
+reg_code,44,31880,9.56
+reg_code,11,30088,9.02
+reg_code,32,26411,7.92
+reg_code,52,23439,7.03
+reg_code,93,21685,6.5
+reg_code,53,19282,5.78
+reg_code,27,17669,5.3
+reg_code,28,16787,5.03
+reg_code,24,16718,5.01
+reg_code,4,3040,0.91
+reg_code,None,2425,0.73
+reg_code,94,1311,0.39
+reg_code,1,1212,0.36
+reg_code,2,1195,0.36
+reg_code,3,990,0.3
+reg_code,6,438,0.13
+reg_code,,90,0.03
+inst_hs_bool,Non,333109,99.86
+inst_hs_bool,Oui,476,0.14
+equip_dsp,false,327604,98.21
+equip_dsp,true,5981,1.79
+equip_ouv_public_bool,false,215156,64.5
+equip_ouv_public_bool,true,118429,35.5
+equip_eclair,false,175049,52.48
+equip_eclair,true,158536,47.52
+equip_douche,false,196553,58.92
+equip_douche,true,137032,41.08
+equip_sanit,true,204243,61.23
+equip_sanit,false,129342,38.77
+equip_pdesi_pdipr,false,332463,99.66
+equip_pdesi_pdipr,true,1122,0.34
+equip_acc_libre,false,209603,62.83
+equip_acc_libre,true,123982,37.17
+equip_saison,false,320312,96.02
+equip_saison,true,13273,3.98
+equip_type_famille,Divers équipements Sports de nature,42122,12.63
+equip_type_famille,Terrain de grands jeux,41396,12.41
+equip_type_famille,Court de tennis,38353,11.5
+equip_type_famille,Boulodrome,28662,8.59
+equip_type_famille,Multisports/City-stades,25601,7.67
+equip_type_famille,Salle multisports,18655,5.59
+equip_type_famille,Salle non spécialisée,16203,4.86
+equip_type_famille,Equipement équestre,15782,4.73
+equip_type_famille,Salle ou terrain spécialisé,15375,4.61
+equip_type_famille,Terrain extérieur de petits jeux collectifs,14601,4.38
+equip_type_famille,Equipement d'activités de forme et de santé,13633,4.09
+equip_type_famille,Site d'activités aquatiques et nautiques,11695,3.51
+equip_type_famille,Equipement d'athlétisme,9540,2.86
+equip_type_famille,Salle de combat,7415,2.22
+equip_type_famille,Bassin de natation,6290,1.89
+equip_type_famille,Pas de tir,5271,1.58
+equip_type_famille,Skatepark & vélo Freestyle,3640,1.09
+equip_type_famille,Structure Artificielle d'Escalade,3092,0.93
+equip_type_famille,Mur et fronton,3004,0.9
+equip_type_famille,Parcours sportif/santé,2787,0.84
+equip_type_famille,Site d'activités aériennes,2496,0.75
+equip_type_famille,Equipement de cyclisme,2426,0.73
+equip_type_famille,Parcours de golf,1823,0.55
+equip_type_famille,Circuit/piste de sports mécaniques,1547,0.46
+equip_type_famille,Equipement & piste de ski,699,0.21
+equip_type_famille,Site de modélisme,611,0.18
+equip_type_famille,Divers équipements,384,0.12
+equip_type_famille,Bowling,296,0.09
+equip_type_famille,Aire de sports de glaces,186,0.06
+inst_acc_handi_bool,true,204956,61.44
+inst_acc_handi_bool,false,128629,38.56
+inst_trans_bool,false,236133,70.79
+inst_trans_bool,true,97452,29.21
+inst_part_bool,false,219756,65.88
+inst_part_bool,true,113829,34.12
+equip_loc_bool,false,176354,52.87
+equip_loc_bool,true,157231,47.13
+equip_pmr_vest,false,268843,80.59
+equip_pmr_vest,true,64742,19.41
+equip_pmr_acc,false,292681,87.74
+equip_pmr_acc,true,40904,12.26
+equip_pmr_aire,true,173123,51.9
+equip_pmr_aire,false,160462,48.1
+equip_pmr_chem,false,257041,77.05
+equip_pmr_chem,true,76544,22.95
+equip_pmr_douche,false,300760,90.16
+equip_pmr_douche,true,32825,9.84
+equip_pmr_sanit,false,267329,80.14
+equip_pmr_sanit,true,66256,19.86
+equip_pmr_trib,false,327307,98.12
+equip_pmr_trib,true,6278,1.88
+equip_pshs_aire,false,319372,95.74
+equip_pshs_aire,true,14213,4.26
+equip_pshs_chem,false,325112,97.46
+equip_pshs_chem,true,8473,2.54
+equip_pshs_sanit,false,283162,84.88
+equip_pshs_sanit,true,50423,15.12
+equip_pshs_sign,false,327343,98.13
+equip_pshs_sign,true,6242,1.87
+equip_pshs_trib,false,332424,99.65
+equip_pshs_trib,true,1161,0.35
+equip_pshs_vest,false,327536,98.19
+equip_pshs_vest,true,6049,1.81

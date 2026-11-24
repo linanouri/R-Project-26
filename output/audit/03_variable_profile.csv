@@ -1,0 +1,116 @@
+variable,n_missing,pct_missing,n_distinct,share_numeric,example_values
+equip_zone_dsi,333574,100,11,0,"{""""type"""": """"GeometryCollection"""", """"geometries"""": [{""""coordinates"""": [[[9.22091685391996, 41.37609080127646], [9.227073916779801, 41.373351242643196], [9.22468745830588, 41.37244387598537], [9.22080548585322, 41.3741153310649], [9.22091685391996, 41.37609080127646]]], """"type"""": """"Polygon""""}]} | {""""type"""": """"GeometryCollection"""", """"geometries"""": [{""""coordinates"""": [[[-0.23166463418149874, 49.28151772053397], [-0.22571981556870924, 49.27584649251315], [-0.22301196625184616, 49.28047611524687], [-0.23166463418149874, 49.28151772053397]]], """"type"""": """"Polygon""""}]} | {""""type"""": """"GeometryCollection"""", """"geometries"""": [{""""coordinates"""": [[[-2.8946506603133173, 48.704227933578665], [-2.924713415230258, 48.754814226197965], [-2.931768959751622, 48.75157822771047], [-2.9425056579367492, 48.74348731960694], [-2.9342230621944054, 48.73741828361585], [-2.9369839274416165, 48.732764859751256], [-2.9406650811044983, 48.72790865387503], [-2.940971843909722, 48.723861457369], [-2.9336095365831056, 48.72021870203022], [-2.930541908530671, 48.72143298312395], [-2.929621620114972, 48.71859961497145], [-2.9244066524250343, 48.71030097582303], [-2.9041603072766122, 48.701596054328974], [-2.897104762756072, 48.70179851146503], [-2.8946506603133173, 48.704227933578665]]], """"type"""": """"Polygon""""}]}"
+equip_annee_fin_aot,333570,100,8,1,2026 | 2027 | 2024
+equip_aot_cot,333559,99.99,2,0,Oui | Non
+equip_piste_nb,332067,99.54,42,1,1 | 5 | 3
+equip_piste_long,331293,99.31,139,1,400.0 | 177.0 | 216.0
+equip_sae_couloir,331237,99.3,70,1,8 | 43 | 9
+equip_sae_surf,331185,99.28,496,1,105.0 | 280.0 | 12.0
+equip_sae_haut,331036,99.24,124,1,7.0 | 14.0 | 9.0
+equip_pasdetir,329563,98.79,113,0,"[""""100 m"""", """"200 m"""", """"300 m""""] | [""""Plateaux"""", """"Autre""""] | [""""10 m"""", """"25 m"""", """"50 m""""]"
+equip_homo_date,328700,98.54,2121,0,2016-03-30 | 2015-02-11 | 2004-07-20
+equip_homo_periode,327993,98.32,7,0,A partir de 2005 | 1995-2004 | 1985-1994
+equip_bassin_larg,327811,98.27,123,1,12.5 | 6.0 | 15.0
+equip_bassin_long,327757,98.25,124,1,25.0 | 15.0 | 14.0
+equip_bassin_min,327482,98.17,74,1,2.0 | 0.8 | 1.8
+equip_bassin_max,327432,98.16,105,1,4.0 | 1.2 | 1.8
+equip_bassin_surf,327187,98.08,518,1,312.5 | 90.0 | 375.0
+gen_2024fin_labellisation,325083,97.45,1,0,2025-09-01
+equip_conf_type,324692,97.33,112,0,"[""""Bain(s) bouillonnant(s)"""", """"Sauna""""] | [""""Sauna""""] | [""""Autre""""]"
+equip_qpv,322291,96.61,1287,0,QN02A03N | QN02A02M | QN02B02M
+equip_qpv_200m,308912,92.6,1679,0,QN02A03N | QN02A02M | QN02A01M
+inst_uai,303924,91.11,12259,0,6200396L | 6200636X | 6200608S
+equip_cogest_type,302989,90.83,13,0,Association(s) | Commune | Etablissement privé commercial
+equip_url,287896,86.3,12107,0,http://www.barakouda.com | http://www.fermepomposa.sitew.com | https://www.bonifacio-windsurf.com/
+equip_travaux_type,278313,83.43,87,0,"[""""Mise en conformité avec les normes AFNOR ou règles fédérales"""", """"Mise en conformité avec les règlements (sécurité,incendie,hygiène ...)""""] | [""""Inadaptation aux attentes des usagers""""] | [""""Mise en conformité avec les règlements (sécurité,incendie,hygiène ...)""""]"
+equip_propsec_type,277204,83.1,12,0,Etablissement privé commercial | Association(s) | Commune
+equip_acces_handi_sensoriel,272876,81.8,258,0,"Sanitaires | Aire de jeu,Tribunes,Vestiaires | Aire de jeu"
+equip_travaux_date,261152,78.29,71,1,2007 | 1996 | 2009
+equip_travaux_periode,260866,78.2,8,0,1985-1994 | 1995-2004 | A partir de 2005
+inst_obs,255829,76.69,23849,0.002,"CESSATION D'ACTIVITE SPORTIVE | Canyon non conventionné, équipement anonyme | Egalement sur la commune de Pianotolli-Caldarello"
+equip_rnb,255354,76.55,49884,0,M99DMZTP3XDQ | 4YRS7SHGDS2B | 5YK4Z1B1HFQR
+equip_obs,250811,75.19,61335,0,Pose d'une nouvelle pelouse synthétique. | RPose d'un revêtement synthétique. | Cette installation peut être utilisée tous les jours et toute l'année pour les entraînements. Six courses hippiques sont organisées durant l'année.
+equip_energie,247406,74.17,73,0,"[""""Electricité""""] | [""""Non chauffé""""] | [""""Gaz""""]"
+inst_trans_type,236133,70.79,89,0,"[""""Bus""""] | [""""Bus"""", """"Autre""""] | [""""Bus"""", """"Train""""]"
+equip_prop_nom,230652,69.14,25709,0,AFA | Commune d'Ajaccio | Région
+inst_part_type_filter,219756,65.88,51,0,Etablissement scolaire | Complexe sportif | Aucun
+inst_part_type,219756,65.88,51,0,"[""""Etablissement scolaire""""] | [""""Complexe sportif""""] | [""""Aucun""""]"
+equip_erp_cat,219137,65.69,7,1,3 | 1 | 4
+equip_erp_type,209801,62.89,175,0,"[""""L""""] | [""""PA""""] | [""""PA"""", """"R"""", """"X""""]"
+equip_haut,208191,62.41,978,1,4.0 | 0.0 | 3.0
+categorie,208108,62.39,2,0,structurant | proximité
+equip_loc_type,176354,52.87,2022,0,"[""""Réception / Accueil"""", """"Bureau(x) Club(s)"""", """"Buvette"""", """"Club(s) house"""", """"Infirmerie"""", """"Local de rangement"""", """"Salle(s) de réunion/cours"""", """"Autre""""] | [""""Réception / Accueil"""", """"Infirmerie""""] | [""""Réception / Accueil"""", """"Infirmerie"""", """"Centre médico-sportif"""", """"Local de rangement""""]"
+equip_acces_handi_mobilite,140344,42.07,473,0,"Accueil,Aire de jeu,Cheminements,Douches,Sanitaires,Vestiaires | Accueil;Cheminements;Aire de jeu;Vestiaires;Douches | Cheminements;Aire de jeu;Sanitaires"
+inst_acc_handi_type,128629,38.56,10,0,"[""""Handicap moteur""""] | [""""Handicap sensoriel""""] | [""""Handicap moteur"""", """"Handicap sensoriel""""]"
+equip_service_date,124984,37.47,204,1,2007 | 1983 | 2001
+inst_siret,64199,19.25,41346,1,21200001200014 | 21200004600152 | 19201636800016
+equip_larg,62904,18.86,1184,1,8.0 | 68.0 | 12.0
+equip_surf,52091,15.62,10291,1,120.0 | 7140.0 | 216.0
+equip_service_periode,39413,11.81,7,0,A partir de 2005 | 1985-1994 | 1995-2004
+equip_long,39086,11.72,3315,1,15.0 | 105.0 | 18.0
+inst_adresse,17094,5.12,105926,0,Stretta di i Culombi | Les Jardins de l’Empereur | Route des Sanguinaires
+equip_vest_ens,17096,5.12,31,1,1 | 2 | 0
+equip_trib_nb,16964,5.09,1330,1,0 | 314 | 168
+equip_vest_sport,13165,3.95,68,1,2 | 4 | 0
+equip_gest_type,11385,3.41,13,0,Commune | Etablissement Public | Région
+equip_sol,7098,2.13,47,0,Synthétique (hors gazon) | Bitume | Béton
+equip_utilisateur,3871,1.16,73,0,"[""""Individuel(s),famille(s)"""", """"Clubs sportifs,comités,ligues,fédérations"""", """"Scolaires,universités"""", """"Autre - association(s) et groupes divers""""] | [""""Scolaires,universités;Autre - association(s) et groupes divers;Clubs sportifs,comités,ligues,fédérations""""] | [""""Scolaires,universités""""]"
+equip_utilisateur_filter,3871,1.16,62,0,"Individuel(s),famille(s),Clubs sportifs,comités,ligues,fédérations,Scolaires,universités,Autre - association(s) et groupes divers | Scolaires,universités,Autre - association(s) et groupes divers,Clubs sportifs,comités,ligues,fédérations | Scolaires,universités"
+equip_nature,3733,1.12,7,0,Intérieur | Découvert | Extérieur couvert
+aps_name,3733,1.12,12608,0,Gymnastique volontaire | Football / Football en salle (Futsal) | Basket-Ball
+equip_prop_type,3087,0.93,12,0,Commune | Région | Association(s)
+dens_lib,2556,0.77,7,0,Bourgs ruraux | Centres urbains intermédiaires | Rural à habitat dispersé
+lib_bdv,2515,0.75,1698,0,Ajaccio | Grosseto-Prugna | Propriano
+equip_coordonnees,1460,0.44,271071,0,"41.98762, 8.79829 | 41.98740041776176, 8.798783923508836 | 41.92717, 8.726578"
+equip_x,1460,0.44,247925,1,8.79829 | 8.798783923508836 | 8.726578
+equip_y,1460,0.44,239364,1,41.98762 | 41.98740041776176 | 41.92717
+epci_nom,1362,0.41,1255,0,CA du Pays Ajaccien | CC de la Pieve de l'Ornano et du Taravo | CC Spelunca-Liamone
+aca_nom,375,0.11,33,0,Académie de Corse | Académie de Lyon | Académie d'Amiens
+dep_code,164,0.05,107,0.996,2A | 2B | 01
+dep_nom,164,0.05,107,0,Corse-du-Sud | Haute-Corse | Ain
+reg_nom,164,0.05,24,0,Corse | Auvergne-Rhône-Alpes | Hauts-de-France
+dep_code_filled,164,0.05,107,0.996,2A | 2B | 01
+reg_slug,164,0.05,24,0,corse | auvergne-rhone-alpes | hauts-de-france
+dep_slug,164,0.05,107,0,corse-du-sud | haute-corse | ain
+reg_code,90,0.03,19,0.993,94 | 84 | 32
+code_bdv,90,0.03,1707,0.989,2A004 | 2A130 | 2A249
+epci_code,26,0.01,1259,0.996,242010056 | 200038958 | 200067049
+equip_numero,0,0,333585,0,E002I2A0010001 | E001I2A0010001 | E001I2A0040001
+equip_maj_date,0,0,382,0,2025-03-31 | 2026-09-04 | 2026-09-10
+inst_numero,0,0,152022,0,I2A0010001 | I2A0040001 | I2A0040002
+inst_nom,0,0,91866,0,Stade municipal d'AFA | Ecole primaire les jardins de l'empereur | L'Etablissement Régional d'Enseignement Adapté
+inst_cp,0,0,6213,1,20167 | 20000 | 20090
+new_name,0,0,27025,0,Afa | Ajaccio | Alata
+new_code,7,0,28496,0.996,2A001 | 2A004 | 2A006
+inst_hs_bool,0,0,2,0,Non | Oui
+equip_nom,0,0,124915,0,Salle des fêtes: culturelle et sportive. | stade municipal d'AFA | terrain de basket
+equip_type_name,0,0,185,0,Salles polyvalentes / des fêtes / non spécialisées | Terrain de football | Terrain de basket-ball
+equip_dsp,0,0,2,0,false | true
+equip_ouv_public_bool,0,0,2,0,true | false
+equip_eclair,0,0,2,0,true | false
+equip_douche,0,0,2,0,true | false
+equip_sanit,0,0,2,0,true | false
+equip_pdesi_pdipr,0,0,2,0,false | true
+equip_acc_libre,0,0,2,0,false | true
+equip_saison,0,0,2,0,false | true
+equip_type_famille,0,0,29,0,Salle non spécialisée | Terrain de grands jeux | Terrain extérieur de petits jeux collectifs
+equip_type_code,0,0,185,1,2201 | 2802 | 2901
+inst_acc_handi_bool,0,0,2,0,true | false
+inst_trans_bool,0,0,2,0,true | false
+inst_part_bool,0,0,2,0,false | true
+equip_loc_bool,0,0,2,0,true | false
+equip_pmr_vest,0,0,2,0,true | false
+equip_pmr_acc,0,0,2,0,true | false
+equip_pmr_aire,0,0,2,0,true | false
+equip_pmr_chem,0,0,2,0,true | false
+equip_pmr_douche,0,0,2,0,true | false
+equip_pmr_sanit,0,0,2,0,true | false
+equip_pmr_trib,0,0,2,0,false | true
+equip_pshs_aire,0,0,2,0,false | true
+equip_pshs_chem,0,0,2,0,false | true
+equip_pshs_sanit,0,0,2,0,true | false
+equip_pshs_sign,0,0,2,0,false | true
+equip_pshs_trib,0,0,2,0,false | true
+equip_pshs_vest,0,0,2,0,false | true
+com_slug,0,0,26965,0,afa | ajaccio | alata
+type_slug,0,0,185,0,salles-polyvalentes-des-fetes-non-specialisees | terrain-de-football | terrain-de-basket-ball

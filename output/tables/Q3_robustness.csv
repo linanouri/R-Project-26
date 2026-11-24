@@ -1,0 +1,4 @@
+outcome,group_a,group_b,n,n_strata,pct_a,pct_b,crude_OR,adjusted_OR,ci_low,ci_high,p_value
+Period missing (rural vs urban),Rural,Urban,330343,165,8.3,6.7,1.259,0.809,0.785,0.834,4.77e-43
+"Pre-1985, observed data",Rural,Urban,305223,161,32.5,39.2,0.745,0.726,0.714,0.739,1.8199999999999988e-297
+"Pre-1985, worst case (all undated = old)",Rural,Urban,330387,170,38,43.3,0.804,0.733,0.721,0.744,0

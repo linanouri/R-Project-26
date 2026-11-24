@@ -1,0 +1,104 @@
+[1a_out_of_service] 333585 -> 333109 rows | Removed installations flagged hors service (inst_hs_bool == 'Oui').
+[1b_territory] 333109 -> 330600 rows | Kept 101 departments; removed overseas collectivities and missing dep_code.
+
+Converted to logical: 25 columns
+
+Accessible playing area (mobility), documented facilities only:
+# A tibble: 2 × 3
+  acc_mob_aire      n   pct
+  <lgl>         <int> <dbl>
+1 FALSE         19974  10.4
+2 TRUE         172204  89.6
+
+Future years set to NA: 2 | years < 1850 kept but flagged: 46 
+Periods filled from exact year: 14083 
+Remaining missing period: 24780 (7.5%)
+Year/period inconsistency (both recorded):
+# A tibble: 1 × 2
+       n pct_inconsistent
+   <int>            <dbl>
+1 192899             1.31
+
+Most frequent surface values above the 99th percentile:
+
+ 90000  80000  1e+05 150000 120000  2e+05 250000  3e+05  75000  6e+05 
+   178    173    158    123     89     88     71     68     61     61 
+
+Surface flagged as outlier within family: 9034 | changing rooms > 50 (check manually): 72 
+
+QPV cross-check (is 'within 200 m' a superset of 'inside'?):
+# A tibble: 3 × 3
+  in_qpv near_qpv_200m      n
+  <lgl>  <lgl>          <int>
+1 FALSE  FALSE         306384
+2 FALSE  TRUE           13191
+3 TRUE   TRUE           11025
+
+Final clean dataset: 330600 rows x 64 columns
+# A tibble: 64 × 3
+   variable              type      pct_missing
+   <chr>                 <chr>           <dbl>
+ 1 equip_id              character        0   
+ 2 inst_id               character        0   
+ 3 commune_code          character        0   
+ 4 commune_name          character        0   
+ 5 epci_code             character        0   
+ 6 dep_code              character        0   
+ 7 dep_nom               character        0   
+ 8 reg_code              character        0   
+ 9 reg_nom               character        0   
+10 lon                   numeric          0.42
+11 lat                   numeric          0.42
+12 density               ordered          0.01
+13 urban_rural           character        0.01
+14 in_qpv                logical          0   
+15 near_qpv_200m         logical          0   
+16 family                character        0   
+17 type                  character        0   
+18 type_code             character        0   
+19 nature                character        1.12
+20 floor_type            character        2.14
+21 categorie             character       62.5 
+22 service_period        ordered          7.5 
+23 post_2005             logical          7.5 
+24 service_year          numeric         37.4 
+25 period_filled         logical          0   
+26 flag_year_very_old    logical          0   
+27 works_year            numeric         78.3 
+28 surface_m2            numeric         16.9 
+29 length_m              numeric         12.5 
+30 width_m               numeric         20.3 
+31 flag_surf_outlier     logical          0   
+32 seats_nb              numeric          5.1 
+33 changing_rooms_nb     numeric          3.95
+34 staff_rooms_nb        numeric          5.14
+35 lighting              logical          0   
+36 showers               logical          0   
+37 toilets               logical          0   
+38 free_access           logical          0   
+39 seasonal              logical          0   
+40 dsp                   logical          0   
+41 acc_mob_documented    logical          0   
+42 acc_mob_aire          logical         41.9 
+43 acc_sens_documented   logical          0   
+44 acc_sens_aire         logical         81.7 
+45 equip_pmr_aire        logical         41.9 
+46 equip_pmr_acc         logical         41.9 
+47 equip_pmr_chem        logical         41.9 
+48 equip_pmr_vest        logical         41.9 
+49 equip_pmr_douche      logical         41.9 
+50 equip_pmr_sanit       logical         41.9 
+51 equip_pmr_trib        logical         41.9 
+52 equip_pshs_aire       logical         81.7 
+53 equip_pshs_chem       logical         81.7 
+54 equip_pshs_sanit      logical         81.7 
+55 equip_pshs_sign       logical         81.7 
+56 equip_pshs_trib       logical         81.7 
+57 equip_pshs_vest       logical         81.7 
+58 inst_acc_documented   logical          0   
+59 inst_acc_moteur       logical         38.4 
+60 inst_declared_non_acc logical         38.4 
+61 owner_type            character        0.93
+62 owner_group           character        0.98
+63 manager_type          character        3.42
+64 manager_group         character        3.49

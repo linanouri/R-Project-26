@@ -1,0 +1,281 @@
+
+================ PART 1: PREPROCESSING (course syntax) ================
+any(is.na(data)): TRUE 
+sum(is.na(data)): 12510064 of 38362275 cells
+
+colSums(is.na(data)) — 10 columns with most NA:
+     equip_zone_dsi equip_annee_fin_aot       equip_aot_cot      equip_piste_nb 
+             333574              333570              333559              332067 
+   equip_piste_long   equip_sae_couloir      equip_sae_surf      equip_sae_haut 
+             331293              331237              331185              331036 
+     equip_pasdetir     equip_homo_date 
+             329563              328700 
+
+rowSums(is.na(data)) — distribution of NA per facility:
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   12.0    34.0    37.0    37.5    41.0    63.0 
+
+Rows with NO missing value at all (complete.cases): 0 
+=> deleting incomplete rows would delete the whole dataset: NA must be handled column by column.
+
+Columns with > 70% missing (dropped from the analysis): 33 
+             equip_zone_dsi         equip_annee_fin_aot 
+                      100.0                       100.0 
+              equip_aot_cot              equip_piste_nb 
+                      100.0                        99.5 
+           equip_piste_long           equip_sae_couloir 
+                       99.3                        99.3 
+             equip_sae_surf              equip_sae_haut 
+                       99.3                        99.2 
+             equip_pasdetir             equip_homo_date 
+                       98.8                        98.5 
+         equip_homo_periode           equip_bassin_larg 
+                       98.3                        98.3 
+          equip_bassin_long            equip_bassin_min 
+                       98.3                        98.2 
+           equip_bassin_max           equip_bassin_surf 
+                       98.2                        98.1 
+  gen_2024fin_labellisation             equip_conf_type 
+                       97.5                        97.3 
+                  equip_qpv              equip_qpv_200m 
+                       96.6                        92.6 
+                   inst_uai           equip_cogest_type 
+                       91.1                        90.8 
+                  equip_url          equip_travaux_type 
+                       86.3                        83.4 
+         equip_propsec_type equip_acces_handi_sensoriel 
+                       83.1                        81.8 
+         equip_travaux_date       equip_travaux_periode 
+                       78.3                        78.2 
+                   inst_obs                   equip_rnb 
+                       76.7                        76.5 
+                  equip_obs               equip_energie 
+                       75.2                        74.2 
+            inst_trans_type 
+                       70.8 
+Columns before: 115 | after: 82 
+
+sum(duplicated(data)) — exact duplicate rows: 0 
+sum(duplicated(data$equip_numero)) — duplicated IDs: 0 
+Same site + same type + same name: 631 (not removed: e.g. 6 identical tennis courts on one site are 6 real facilities)
+
+Imputation of 'nature' (indoor/outdoor, 3696 NA) with the MODE of the same facility type:
+NA before: 3696 | after: 0 
+
+Surface (m²): mean = 11127 | median = 648 
+Mean imputation would give a missing tennis court the surface of the national mean,
+ inflated by ski areas and nature sites. Surface is also missing NOT at random
+ (98.9% missing for pools). Decision: no imputation; surface is analysed within family only.
+# A tibble: 8 × 4
+  family                          n mean_m2 median_m2
+  <chr>                       <int>   <dbl>     <dbl>
+1 Terrain de grands jeux      40296    5831      6200
+2 Court de tennis             37590     772       648
+3 Boulodrome                  27618     587       260
+4 Multisports/City-stades     23862     785       600
+5 Salle multisports           18126     809       800
+6 Salle non spécialisée       15555     272       180
+7 Salle ou terrain spécialisé 14662     642       180
+8 Equipement équestre         14642    5740      1200
+
+---- Outliers: IQR rule (course method) on gymnasium surfaces ----
+Q1 = 600, Q3 = 1008, IQR = 408, bounds = [-12 ; 1620]
+Gymnasiums: 18126 | outside the bounds: 459 
+
+IQR outliers if applied to ALL facilities together: 51142 
+IQR outliers if applied WITHIN each family: 31754 
+Decision kept in the project: flag, do not delete (a 60 km² ski area is real).
+
+================ PART 2: CHAPTER 2 CHARTS ================
+Departments with no population (anti_join):
+# A tibble: 1 × 2
+  dep_code dep_nom
+  <chr>    <chr>  
+1 976      Mayotte
+
+IQR outliers, facilities per 10k (departments):
+# A tibble: 4 × 2
+  dep_nom      facilities_per_10k
+  <chr>                     <dbl>
+1 Hautes-Alpes               261.
+2 Lozère                     190.
+3 Ariège                     121.
+4 Cantal                     117.
+
+================ PART 3: CHAPTER 3 TESTS ================
+
+Pearson correlation, log supply vs log density:
+
+	Pearson's product-moment correlation
+
+data:  m96$log_supply and m96$log_density
+t = -15.025, df = 94, p-value < 2.2e-16
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ -0.8906935 -0.7693749
+sample estimates:
+       cor 
+-0.8402528 
+
+Pearson correlation, log supply vs quality index:
+
+	Pearson's product-moment correlation
+
+data:  m96$log_supply and m96$quality_index
+t = -8.619, df = 94, p-value = 1.58e-13
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ -0.7632259 -0.5352106
+sample estimates:
+       cor 
+-0.6644045 
+
+
+t-test: equipment quality index, mostly rural vs mostly urban departments
+
+Mostly rural Mostly urban 
+          66           30 
+
+	Welch Two Sample t-test
+
+data:  quality_index by dep_type
+t = -6.8337, df = 64.709, p-value = 3.474e-09
+alternative hypothesis: true difference in means between group Mostly rural and group Mostly urban is not equal to 0
+95 percent confidence interval:
+ -16.618520  -9.101314
+sample estimates:
+mean in group Mostly rural mean in group Mostly urban 
+                   92.5895                   105.4494 
+
+
+ANOVA: documentation rate by region (13 regions)
+            Df Sum Sq Mean Sq F value   Pr(>F)    
+reg_nom     12   6546   545.5   3.217 0.000803 ***
+Residuals   83  14077   169.6                     
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+Robustness (non-parametric): Kruskal-Wallis
+
+	Kruskal-Wallis rank sum test
+
+data:  pct_documented by reg_nom
+Kruskal-Wallis chi-squared = 27.427, df = 12, p-value = 0.006705
+
+
+ANOVA: equipment quality index by region
+            Df Sum Sq Mean Sq F value Pr(>F)   
+reg_nom     12   3275  272.89   2.893 0.0022 **
+Residuals   83   7828   94.32                  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+================ PART 4: CHAPTER 3 REGRESSION ================
+
+---- model1: simple regression ----
+
+Call:
+lm(formula = quality_index ~ log_supply, data = m96)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-28.137  -5.895   1.381   6.291  16.047 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  159.924      7.393  21.633  < 2e-16 ***
+log_supply   -15.598      1.810  -8.619 1.58e-13 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 8.123 on 94 degrees of freedom
+Multiple R-squared:  0.4414,	Adjusted R-squared:  0.4355 
+F-statistic: 74.29 on 1 and 94 DF,  p-value: 1.58e-13
+
+
+---- model2: multiple regression ----
+
+Call:
+lm(formula = quality_index ~ log_supply + log_density + income_k + 
+    pct_commune, data = m96)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-26.002  -4.105   1.232   5.463  15.805 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 103.01403   22.13128   4.655  1.1e-05 ***
+log_supply   -9.16038    3.22533  -2.840  0.00556 ** 
+log_density   2.00942    1.28236   1.567  0.12059    
+income_k      0.94443    0.49368   1.913  0.05889 .  
+pct_commune  -0.03843    0.10536  -0.365  0.71616    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 7.824 on 91 degrees of freedom
+Multiple R-squared:  0.4983,	Adjusted R-squared:  0.4762 
+F-statistic: 22.59 on 4 and 91 DF,  p-value: 5.569e-13
+
+                   2.5 %     97.5 %
+(Intercept)  59.05296624 146.975094
+log_supply  -15.56710667  -2.753662
+log_density  -0.53783074   4.556678
+income_k     -0.03620093   1.925070
+pct_commune  -0.24770943   0.170854
+log_supply: -15.60 alone -> -9.16 all else equal
+
+---- model3: model2 + region (reference: Île-de-France) ----
+Adjusted R²: model2 = 0.476 | model3 = 0.494
+Analysis of Variance Table
+
+Model 1: quality_index ~ log_supply + log_density + income_k + pct_commune
+Model 2: quality_index ~ log_supply + log_density + income_k + pct_commune + 
+    reg_nom
+  Res.Df    RSS Df Sum of Sq      F Pr(>F)
+1     91 5570.8                           
+2     79 4675.1 12    895.69 1.2613 0.2583
+
+---- Same test for documentation (H4): does region add information? ----
+Adjusted R²: without region = 0.160 | with region = 0.324
+Analysis of Variance Table
+
+Model 1: pct_documented ~ log_supply + log_density + income_k + pct_commune
+Model 2: pct_documented ~ log_supply + log_density + income_k + pct_commune + 
+    reg_nom
+  Res.Df   RSS Df Sum of Sq      F   Pr(>F)   
+1     91 16595                                
+2     79 11589 12    5005.5 2.8434 0.002718 **
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+---- model2 without the 6 influential departments ----
+n = 90 
+   Estimate  Std. Error     t value    Pr(>|t|) 
+-6.58574768  3.26159857 -2.01917788  0.04661992 
+
+---- predict(): typical department with LOW (Q1) vs HIGH (Q3) supply ----
+Facilities per 10k: 46.2 72.9 
+         fit      lwr       upr
+25% 97.72088 95.19144 100.25031
+75% 93.54146 91.59030  95.49263
+         fit      lwr      upr
+25% 97.72088 81.97466 113.4671
+75% 93.54146 77.87773 109.2052
+
+---- Train/test evaluation (70 train / 26 test departments) ----
+RMSE baseline (mean only) = 9.97 | simple model = 9.93 | multiple model = 9.80
+Mean RMSE over 200 random splits:
+baseline   simple multiple 
+   10.95     8.23     8.25 
+
+================ PART 5: FEATURE SCALING ================
+Correlation between the two versions of the indicator: 0.999 
+Spearman (same ranking?): 0.997 
+# A tibble: 5 × 3
+  dep_nom         QQG_z QQG_minmax
+  <chr>           <dbl>      <dbl>
+1 Hautes-Alpes     6.37      1    
+2 Lozère           3.96      0.561
+3 Meuse            3.21      0.495
+4 Hautes-Pyrénées  3.09      0.455
+5 Ariège           2.71      0.355

@@ -1,0 +1,233 @@
+Filosofi departments: 97 
+Boundary polygons: 96 
+
+Merge checks (codes in Data ES without a match):
+  no population: 976 
+  no income    : 971, 972, 973, 976 
+  no boundary  : 971, 972, 973, 974, 976 
+
+================ Q2 ================
+ facilities_per_10k sites_per_10k      core_per_10k   
+ Min.   : 13.91     Min.   :  4.492   Min.   : 13.91  
+ 1st Qu.: 43.99     1st Qu.: 19.879   1st Qu.: 39.16  
+ Median : 60.56     Median : 28.203   Median : 53.15  
+ Mean   : 63.03     Mean   : 30.964   Mean   : 51.38  
+ 3rd Qu.: 72.09     3rd Qu.: 36.983   3rd Qu.: 60.48  
+ Max.   :261.18     Max.   :138.359   Max.   :132.92  
+
+Top 10 / bottom 10 departments (facilities per 10,000 inhabitants):
+# A tibble: 10 × 4
+   dep_code dep_nom                 facilities_per_10k sites_per_10k
+   <chr>    <chr>                                <dbl>         <dbl>
+ 1 05       Hautes-Alpes                         261.          138. 
+ 2 48       Lozère                               190.          116. 
+ 3 09       Ariège                               121.           75.5
+ 4 15       Cantal                               117.           60.6
+ 5 36       Indre                                112.           48.2
+ 6 46       Lot                                  111.           63.9
+ 7 12       Aveyron                              110.           54.6
+ 8 04       Alpes-de-Haute-Provence              108.           57.2
+ 9 23       Creuse                                98.3          49.5
+10 32       Gers                                  96.1          53.1
+# A tibble: 10 × 4
+   dep_code dep_nom           facilities_per_10k sites_per_10k
+   <chr>    <chr>                          <dbl>         <dbl>
+ 1 75       Paris                           13.9          4.49
+ 2 93       Seine-Saint-Denis               15.8          5.44
+ 3 94       Val-de-Marne                    20.5          7.50
+ 4 92       Hauts-de-Seine                  21.2          6.40
+ 5 13       Bouches-du-Rhône                28.3         10.6 
+ 6 69       Rhône                           29.3         11.3 
+ 7 971      Guadeloupe                      29.5         16.0 
+ 8 95       Val-d'Oise                      31.5         12.1 
+ 9 78       Yvelines                        31.7          9.21
+10 06       Alpes-Maritimes                 31.7         15.1 
+
+Spearman: facilities per 10k vs population density (96 metropolitan):
+
+	Spearman's rank correlation rho
+
+data:  q2m$facilities_per_10k and q2m$density
+S = 261996, p-value < 2.2e-16
+alternative hypothesis: true rho is not equal to 0
+sample estimates:
+       rho 
+-0.7769669 
+
+Same, excluding nature sites (core facilities):
+
+	Spearman's rank correlation rho
+
+data:  q2m$core_per_10k and q2m$density
+S = 258502, p-value < 2.2e-16
+alternative hypothesis: true rho is not equal to 0
+sample estimates:
+       rho 
+-0.7532691 
+
+
+Spearman: facilities per 10k vs equipment quality index (quantity vs quality):
+
+	Spearman's rank correlation rho
+
+data:  q2m$facilities_per_10k and q2m$quality_index
+S = 237840, p-value = 3.129e-11
+alternative hypothesis: true rho is not equal to 0
+sample estimates:
+       rho 
+-0.6131308 
+
+
+================ Quantity–Quality Gap ================
+    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+-5.20956 -0.99304  0.01409  0.00000  1.10159  6.37285 
+
+Largest positive gaps (many but bare):
+# A tibble: 8 × 4
+  dep_nom         facilities_per_10k quality_index   QQG
+  <chr>                        <dbl>         <dbl> <dbl>
+1 Hautes-Alpes                 261.           63.1  6.37
+2 Lozère                       190.           81.7  3.96
+3 Meuse                         68.6          65.8  3.21
+4 Hautes-Pyrénées               86.7          72.6  3.09
+5 Ariège                       121.           84.7  2.71
+6 Haute-Marne                   79.4          78.0  2.41
+7 Creuse                        98.3          85.1  2.21
+8 Haute-Saône                   82.6          81.2  2.19
+
+Largest negative gaps (few but well equipped):
+# A tibble: 8 × 4
+  dep_nom           facilities_per_10k quality_index   QQG
+  <chr>                          <dbl>         <dbl> <dbl>
+1 Paris                           13.9          119. -5.21
+2 Val-de-Marne                    20.5          118. -4.28
+3 Hauts-de-Seine                  21.2          119. -4.26
+4 Seine-Saint-Denis               15.8          108. -3.87
+5 Yvelines                        31.7          116. -3.14
+6 Bouches-du-Rhône                28.3          113. -3.04
+7 Essonne                         32.1          113. -2.83
+8 Alpes-Maritimes                 31.7          109. -2.49
+
+Spearman: QQG vs density:
+
+	Spearman's rank correlation rho
+
+data:  qqg$QQG and qqg$density
+S = 263334, p-value < 2.2e-16
+alternative hypothesis: true rho is not equal to 0
+sample estimates:
+       rho 
+-0.7860418 
+
+
+================ Q10 ================
+Departments in the models: 96 
+
+Correlation matrix of predictors:
+            log_supply log_density income_k pct_commune
+log_supply        1.00       -0.84    -0.45        0.01
+log_density      -0.84        1.00     0.57       -0.05
+income_k         -0.45        0.57     1.00       -0.05
+pct_commune       0.01       -0.05    -0.05        1.00
+
+VIF (> 5 = problematic collinearity):
+ log_supply log_density    income_k pct_commune 
+       3.42        4.03        1.48        1.01 
+
+------ Model A: documentation rate ------
+
+Call:
+lm(formula = f, data = q10)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-33.349  -8.930   1.266   9.848  23.431 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)   
+(Intercept) 101.71604   38.19726   2.663  0.00916 **
+log_supply  -13.82137    5.56673  -2.483  0.01487 * 
+log_density   0.06005    2.21328   0.027  0.97841   
+income_k     -0.45272    0.85206  -0.531  0.59649   
+pct_commune   0.30942    0.18184   1.702  0.09225 . 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 13.5 on 91 degrees of freedom
+Multiple R-squared:  0.1953,	Adjusted R-squared:   0.16 
+F-statistic: 5.523 on 4 and 91 DF,  p-value: 0.0005016
+
+# A tibble: 5 × 9
+  model                       term        estimate  ols_low ols_high boot_low
+  <chr>                       <chr>          <dbl>    <dbl>    <dbl>    <dbl>
+1 Model A: documentation rate (Intercept) 102       25.8     178       26    
+2 Model A: documentation rate log_supply  -13.8    -24.9      -2.76   -26.5  
+3 Model A: documentation rate log_density   0.0601  -4.34      4.46    -4.53 
+4 Model A: documentation rate income_k     -0.453   -2.15      1.24    -1.85 
+5 Model A: documentation rate pct_commune   0.309   -0.0518    0.671   -0.141
+  boot_high p_value std_beta
+      <dbl>   <dbl>    <dbl>
+1   192     0.00916 NA      
+2    -4.3   0.0149  -0.432  
+3     4.21  0.978    0.00512
+4     1.34  0.596   -0.0608 
+5     0.641 0.0922   0.16   
+
+Shapiro-Wilk on residuals:
+
+	Shapiro-Wilk normality test
+
+data:  resid(m)
+W = 0.97819, p-value = 0.1099
+
+Breusch-Pagan: LM = 13.33, df = 4, p = 0.0098
+Influential departments (Cook's D > 4/n): Cher, Corse-du-Sud, Haute-Savoie, Hauts-de-Seine 
+
+------ Model B: equipment quality index ------
+
+Call:
+lm(formula = f, data = q10)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-26.002  -4.105   1.232   5.463  15.805 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 103.01403   22.13128   4.655  1.1e-05 ***
+log_supply   -9.16038    3.22533  -2.840  0.00556 ** 
+log_density   2.00942    1.28236   1.567  0.12059    
+income_k      0.94443    0.49368   1.913  0.05889 .  
+pct_commune  -0.03843    0.10536  -0.365  0.71616    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 7.824 on 91 degrees of freedom
+Multiple R-squared:  0.4983,	Adjusted R-squared:  0.4762 
+F-statistic: 22.59 on 4 and 91 DF,  p-value: 5.569e-13
+
+# A tibble: 5 × 9
+  model                            term        estimate  ols_low ols_high
+  <chr>                            <chr>          <dbl>    <dbl>    <dbl>
+1 Model B: equipment quality index (Intercept) 103       59.1     147    
+2 Model B: equipment quality index log_supply   -9.16   -15.6      -2.75 
+3 Model B: equipment quality index log_density   2.01    -0.538     4.56 
+4 Model B: equipment quality index income_k      0.944   -0.0362    1.93 
+5 Model B: equipment quality index pct_commune  -0.0384  -0.248     0.171
+  boot_low boot_high  p_value std_beta
+     <dbl>     <dbl>    <dbl>    <dbl>
+1  49.6      152     0.000011  NA     
+2 -16.5       -0.274 0.00556   -0.39  
+3  -0.426      5.24  0.121      0.233 
+4  -0.0302     1.78  0.0589     0.173 
+5  -0.251      0.143 0.716     -0.0272
+
+Shapiro-Wilk on residuals:
+
+	Shapiro-Wilk normality test
+
+data:  resid(m)
+W = 0.96987, p-value = 0.02606
+
+Breusch-Pagan: LM = 6.81, df = 4, p = 0.1461
+Influential departments (Cook's D > 4/n): Hautes-Alpes, Haute-Corse, Meuse, Hautes-Pyrénées, Paris, Seine-Saint-Denis 

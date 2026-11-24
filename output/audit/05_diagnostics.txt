@@ -1,0 +1,649 @@
+
+===== csv_068mb — column names =====
+ [1] "creation_date"            "maj_date"                
+ [3] "numero"                   "nom"                     
+ [5] "siret"                    "adresse"                 
+ [7] "commune"                  "cp"                      
+ [9] "insee"                    "coordonnees"             
+[11] "install_particuliere"     "acces_handi"             
+[13] "uai"                      "acces_transp_commun"     
+[15] "observations"             "moderation_maj_date"     
+[17] "moderation_creation_date" "hs"                      
+[19] "maj_lien"                 "install_nb"              
+[21] "epci_code"                "epci_nom"                
+[23] "dep_code"                 "dep_nom"                 
+[25] "reg_code"                 "reg_nom"                 
+[27] "code_bdv"                 "lib_bdv"                 
+[29] "arr_code"                 "arr_name"                
+[31] "dens_niveau"              "dens_lib"                
+[33] "dep_code_filled"          "aca_nom"                 
+[35] "zrr_simp"                 "bloc_adresse"            
+[37] "com_name"                 "adresse_new"             
+[39] "commune_new"              "cp_new"                  
+[41] "insee_new"                "date_creation_metier"    
+[43] "etat"                     "reg_slug"                
+[45] "dep_slug"                 "com_slug"                
+
+===== csv_174mb — column names =====
+ [1] "installation_numero"            "creation_dt"                   
+ [3] "maj_date"                       "maj_lien"                      
+ [5] "numero"                         "nom"                           
+ [7] "type"                           "coordonnees"                   
+ [9] "proprietaire_principal_nom"     "proprietaire_principal_type"   
+[11] "proprietaire_secondaire_type"   "gestionnaire_type"             
+[13] "co_gestionnaire_type"           "gestion_dsp"                   
+[15] "arrete_ouverture"               "erp_type"                      
+[17] "erp_cat"                        "homologation_date"             
+[19] "homologation_periode"           "derniers_travaux_date"         
+[21] "derniers_travaux_periode"       "derniers_travaux_type"         
+[23] "chauffage_energie"              "aire_longueur"                 
+[25] "aire_largeur"                   "aire_hauteur"                  
+[27] "aire_surface"                   "aire_eclairage"                
+[29] "aire_couloirs_nb"               "places_tibune_nb"              
+[31] "vestiaires_sportifs_nb"         "vestiaires_arbitres_nb"        
+[33] "douches"                        "sanitaires"                    
+[35] "acces_handi_mobilite"           "acces_handi_sensoriel"         
+[37] "is_pdesi_pdipr"                 "bassin_longueur"               
+[39] "bassin_surface"                 "bassin_profondeur_min"         
+[41] "bassin_profondeur_max"          "piste_longueur"                
+[43] "sae_hauteur"                    "sae_surface"                   
+[45] "sae_couloirs_nb"                "pas_de_tir_type"               
+[47] "website"                        "utilisateurs"                  
+[49] "acces_libre"                    "ouverture_saisonniere"         
+[51] "observations"                   "coordonnees_y"                 
+[53] "coordonnees_x"                  "equip_nb"                      
+[55] "famille"                        "code"                          
+[57] "rnb_id"                         "mise_en_service_date"          
+[59] "mise_en_service_periode"        "bassin_largeur"                
+[61] "is_date_derniers_travaux_known" "is_date_mise_en_service_known" 
+[63] "is_date_homologation_known"     "autres_proprietaires"          
+[65] "date_creation_metier"           "autres_locaux"                 
+[67] "amenagements_confort"           "nature"                        
+[69] "aire_nature_sol"                "activites"                     
+[71] "zone_dsi"                       "etat"                          
+[73] "aot_cot"                        "annee_fin_aot"                 
+
+===== csv_100mb — column names =====
+ [1] "aps_name"             "aps_discipline"       "aps_code"            
+ [4] "aps_niveau"           "equip_numero"         "aps_pratique"        
+ [7] "creation_dt"          "maj_date"             "maj_lien"            
+[10] "date_creation_metier" "id_unique_activite"   "etat"                
+
+===== Documentation PDF check =====
+Size (bytes): 13881 
+First line:  
+
+===== B. Scope =====
+
+--- inst_hs_bool ---
+   inst_hs_bool      N   pct
+         <char>  <int> <num>
+1:          Non 333109 99.86
+2:          Oui    476  0.14
+
+--- equip_ouv_public_bool ---
+   equip_ouv_public_bool      N   pct
+                  <char>  <int> <num>
+1:                 false 215156  64.5
+2:                  true 118429  35.5
+
+--- equip_nature ---
+           equip_nature      N   pct
+                 <char>  <int> <num>
+1:            Découvert 179323 53.76
+2:            Intérieur  87692 26.29
+3: Site naturel aménagé  38410 11.51
+4:         Site naturel  17202  5.16
+5:    Extérieur couvert   4607  1.38
+6:                 <NA>   3733  1.12
+7:      Site artificiel   1891  0.57
+8:          Découvrable    727  0.22
+
+--- categorie ---
+     categorie      N   pct
+        <char>  <int> <num>
+1:        <NA> 208108 62.39
+2: structurant  88553 26.55
+3:   proximité  36924 11.07
+
+--- equip_dsp ---
+   equip_dsp      N   pct
+      <char>  <int> <num>
+1:     false 327604 98.21
+2:      true   5981  1.79
+
+--- equip_acc_libre ---
+   equip_acc_libre      N   pct
+            <char>  <int> <num>
+1:           false 209603 62.83
+2:            true 123982 37.17
+
+--- Departments (code + name) ---
+     dep_code                  dep_nom     N   pct
+       <char>                   <char> <int> <num>
+  1:       59                     Nord  8651  2.59
+  2:       57                  Moselle  7402  2.22
+  3:       31            Haute-Garonne  6935  2.08
+  4:       44         Loire-Atlantique  6560  1.97
+  5:       64     Pyrénées-Atlantiques  6059  1.82
+  6:       33                  Gironde  5962  1.79
+  7:       38                    Isère  5943  1.78
+  8:       13         Bouches-du-Rhône  5915  1.77
+  9:       29                Finistère  5875  1.76
+ 10:       62            Pas-de-Calais  5848  1.75
+ 11:       69                    Rhône  5615  1.68
+ 12:       34                  Hérault  5385  1.61
+ 13:       56                 Morbihan  5355  1.61
+ 14:       76           Seine-Maritime  5256  1.58
+ 15:       72                   Sarthe  5121  1.54
+ 16:       77           Seine-et-Marne  4991  1.50
+ 17:       49           Maine-et-Loire  4959  1.49
+ 18:       78                 Yvelines  4713  1.41
+ 19:       67                 Bas-Rhin  4710  1.41
+ 20:       60                     Oise  4610  1.38
+ 21:       74             Haute-Savoie  4461  1.34
+ 22:       63              Puy-de-Dôme  4337  1.30
+ 23:       91                  Essonne  4303  1.29
+ 24:       22            Côtes-d'Armor  4222  1.27
+ 25:       17        Charente-Maritime  4096  1.23
+ 26:       01                      Ain  4094  1.23
+ 27:       85                   Vendée  4076  1.22
+ 28:       95               Val-d'Oise  4033  1.21
+ 29:       30                     Gard  3995  1.20
+ 30:       83                      Var  3961  1.19
+ 31:       66      Pyrénées-Orientales  3935  1.18
+ 32:       54       Meurthe-et-Moselle  3871  1.16
+ 33:       35          Ille-et-Vilaine  3830  1.15
+ 34:       05             Hautes-Alpes  3747  1.12
+ 35:       68                Haut-Rhin  3736  1.12
+ 36:       80                    Somme  3679  1.10
+ 37:       14                 Calvados  3648  1.09
+ 38:       51                    Marne  3629  1.09
+ 39:       02                    Aisne  3623  1.09
+ 40:       27                     Eure  3591  1.08
+ 41:       06          Alpes-Maritimes  3584  1.07
+ 42:       45                   Loiret  3544  1.06
+ 43:       37           Indre-et-Loire  3533  1.06
+ 44:       92           Hauts-de-Seine  3506  1.05
+ 45:       42                    Loire  3491  1.05
+ 46:       71           Saône-et-Loire  3367  1.01
+ 47:       26                    Drôme  3246  0.97
+ 48:       73                   Savoie  3195  0.96
+ 49:       25                    Doubs  3179  0.95
+ 50:       12                  Aveyron  3077  0.92
+ 51:       21                Côte-d'Or  3059  0.92
+ 52:      974               La Réunion  3040  0.91
+ 53:       11                     Aude  2940  0.88
+ 54:       75                    Paris  2930  0.88
+ 55:       94             Val-de-Marne  2922  0.88
+ 56:       81                     Tarn  2857  0.86
+ 57:       28             Eure-et-Loir  2737  0.82
+ 58:       88                   Vosges  2724  0.82
+ 59:       53                  Mayenne  2723  0.82
+ 60:       24                 Dordogne  2698  0.81
+ 61:       93        Seine-Saint-Denis  2690  0.81
+ 62:       84                 Vaucluse  2661  0.80
+ 63:       86                   Vienne  2590  0.78
+ 64:       50                   Manche  2480  0.74
+ 65:       79              Deux-Sèvres  2467  0.74
+ 66:       07                  Ardèche  2459  0.74
+ 67:       40                   Landes  2455  0.74
+ 68:       03                   Allier  2451  0.73
+ 69:       36                    Indre  2418  0.72
+ 70:       47           Lot-et-Garonne  2384  0.71
+ 71:       41             Loir-et-Cher  2310  0.69
+ 72:       87             Haute-Vienne  2300  0.69
+ 73:       19                  Corrèze  2288  0.69
+ 74:       18                     Cher  2176  0.65
+ 75:       89                    Yonne  2099  0.63
+ 76:       39                     Jura  2041  0.61
+ 77:       65          Hautes-Pyrénées  2008  0.60
+ 78:       46                      Lot  1954  0.59
+ 79:       70              Haute-Saône  1930  0.58
+ 80:       09                   Ariège  1892  0.57
+ 81:       32                     Gers  1862  0.56
+ 82:       04  Alpes-de-Haute-Provence  1817  0.54
+ 83:       61                     Orne  1812  0.54
+ 84:       43              Haute-Loire  1759  0.53
+ 85:       16                 Charente  1732  0.52
+ 86:       08                 Ardennes  1724  0.52
+ 87:       82          Tarn-et-Garonne  1714  0.51
+ 88:       15                   Cantal  1698  0.51
+ 89:       10                     Aube  1505  0.45
+ 90:       48                   Lozère  1454  0.44
+ 91:       52              Haute-Marne  1338  0.40
+ 92:       55                    Meuse  1241  0.37
+ 93:      971               Guadeloupe  1212  0.36
+ 94:      988       Nouvelle-Calédonie  1212  0.36
+ 95:      972               Martinique  1195  0.36
+ 96:       23                   Creuse  1137  0.34
+ 97:       58                   Nièvre  1106  0.33
+ 98:      973                   Guyane   990  0.30
+ 99:      987      Polynésie française   990  0.30
+100:       90    Territoire de Belfort   888  0.27
+101:       2B              Haute-Corse   759  0.23
+102:       2A             Corse-du-Sud   552  0.17
+103:      976                  Mayotte   438  0.13
+104:     <NA>                     <NA>   164  0.05
+105:      986         Wallis-et-Futuna    67  0.02
+106:      975 Saint-Pierre-et-Miquelon    39  0.01
+107:      978             Saint-Martin    27  0.01
+108:      977         Saint-Barthélemy    16  0.00
+     dep_code                  dep_nom     N   pct
+       <char>                   <char> <int> <num>
+
+===== C. Key categories =====
+
+--- equip_type_famille ---
+                             equip_type_famille     N   pct
+                                         <char> <int> <num>
+ 1:         Divers équipements Sports de nature 42122 12.63
+ 2:                      Terrain de grands jeux 41396 12.41
+ 3:                             Court de tennis 38353 11.50
+ 4:                                  Boulodrome 28662  8.59
+ 5:                     Multisports/City-stades 25601  7.67
+ 6:                           Salle multisports 18655  5.59
+ 7:                       Salle non spécialisée 16203  4.86
+ 8:                         Equipement équestre 15782  4.73
+ 9:                 Salle ou terrain spécialisé 15375  4.61
+10: Terrain extérieur de petits jeux collectifs 14601  4.38
+11: Equipement d'activités de forme et de santé 13633  4.09
+12:    Site d'activités aquatiques et nautiques 11695  3.51
+13:                     Equipement d'athlétisme  9540  2.86
+14:                             Salle de combat  7415  2.22
+15:                          Bassin de natation  6290  1.89
+16:                                  Pas de tir  5271  1.58
+17:                  Skatepark & vélo Freestyle  3640  1.09
+18:           Structure Artificielle d'Escalade  3092  0.93
+19:                              Mur et fronton  3004  0.90
+20:                      Parcours sportif/santé  2787  0.84
+21:                  Site d'activités aériennes  2496  0.75
+22:                      Equipement de cyclisme  2426  0.73
+23:                            Parcours de golf  1823  0.55
+24:          Circuit/piste de sports mécaniques  1547  0.46
+25:                   Equipement & piste de ski   699  0.21
+26:                           Site de modélisme   611  0.18
+27:                          Divers équipements   384  0.12
+28:                                     Bowling   296  0.09
+29:                    Aire de sports de glaces   186  0.06
+                             equip_type_famille     N   pct
+                                         <char> <int> <num>
+
+--- equip_service_periode ---
+   equip_service_periode     N   pct
+                  <char> <int> <num>
+1:             1995-2004 70762 21.21
+2:             1985-1994 67224 20.15
+3:             1975-1984 52840 15.84
+4:      A partir de 2005 47755 14.32
+5:                  <NA> 39413 11.81
+6:             1965-1974 28959  8.68
+7:             1945-1964 15998  4.80
+8:            Avant 1945 10634  3.19
+
+--- equip_travaux_periode ---
+   equip_travaux_periode      N   pct
+                  <char>  <int> <num>
+1:                  <NA> 260866 78.20
+2:      A partir de 2005  38586 11.57
+3:             1995-2004  29410  8.82
+4:             1985-1994   3668  1.10
+5:             1975-1984    848  0.25
+6:            Avant 1975    198  0.06
+7:             1965-1974      5  0.00
+8:             1945-1964      3  0.00
+9:            Avant 1945      1  0.00
+
+--- equip_prop_type ---
+                       equip_prop_type      N   pct
+                                <char>  <int> <num>
+ 1:                            Commune 235774 70.68
+ 2:     Etablissement privé commercial  25916  7.77
+ 3:                               EPCI  15445  4.63
+ 4:                 Multi-propriétaire   9187  2.75
+ 5:               Privé non commercial   9037  2.71
+ 6:                        Département   8580  2.57
+ 7:                     Association(s)   7963  2.39
+ 8:                             Région   6237  1.87
+ 9:                               Etat   4769  1.43
+10: Etablissement d'enseignement privé   3845  1.15
+11:               Etablissement Public   3566  1.07
+12:                               <NA>   3087  0.93
+13:                              Autre    179  0.05
+
+--- equip_gest_type ---
+                       equip_gest_type      N   pct
+                                <char>  <int> <num>
+ 1:                            Commune 199511 59.81
+ 2:                     Association(s)  41466 12.43
+ 3:     Etablissement privé commercial  28428  8.52
+ 4:                               EPCI  21837  6.55
+ 5:                               <NA>  11385  3.41
+ 6:               Etablissement Public   8478  2.54
+ 7:                        Département   7378  2.21
+ 8: Etablissement d'enseignement privé   4675  1.40
+ 9:               Privé non commercial   3886  1.16
+10:                               Etat   3050  0.91
+11:                             Région   2993  0.90
+12:                 Multi-propriétaire    288  0.09
+13:                              Autre    208  0.06
+14:                              other      2  0.00
+
+--- dens_lib ---
+                         dens_lib     N   pct
+                           <char> <int> <num>
+1:       Rural à habitat dispersé 81203 24.34
+2:                  Bourgs ruraux 70907 21.26
+3:         Grands centres urbains 66623 19.97
+4: Centres urbains intermédiaires 37126 11.13
+5:             Ceintures urbaines 32686  9.80
+6:                 Petites villes 23743  7.12
+7:  Rural à habitat très dispersé 18741  5.62
+8:                           <NA>  2556  0.77
+
+--- inst_acc_handi_type ---
+                              inst_acc_handi_type      N   pct
+                                           <char>  <int> <num>
+ 1:                         [""Handicap moteur""] 192620 57.74
+ 2:                                          <NA> 128629 38.56
+ 3: [""Handicap moteur"", ""Handicap sensoriel""]   9566  2.87
+ 4: [""Handicap sensoriel"", ""Handicap moteur""]   1368  0.41
+ 5:                          [""Non accessible""]    532  0.16
+ 6:                      [""Handicap sensoriel""]    428  0.13
+ 7:      [""Handicap sensoriel;Handicap moteur""]    273  0.08
+ 8:      [""Handicap moteur;Handicap sensoriel""]    164  0.05
+ 9:  [""Non accessible"", ""Handicap sensoriel""]      2  0.00
+10:     [""Non accessible"", ""Handicap moteur""]      2  0.00
+11:       [""Non accessible;Handicap sensoriel""]      1  0.00
+
+--- equip_sol ---
+                             equip_sol     N   pct
+                                <char> <int> <num>
+ 1:                  Surface naturelle 61000 18.29
+ 2:           Synthétique (hors gazon) 50609 15.17
+ 3:                             Bitume 45173 13.54
+ 4:                      Gazon naturel 38404 11.51
+ 5:                              Béton 33263  9.97
+ 6:                              Sable 25654  7.69
+ 7:                  Stabilisé/cendrée 23205  6.96
+ 8:                            Parquet 16526  4.95
+ 9:                          Carrelage 12062  3.62
+10:                  Gazon synthétique  8229  2.47
+11:                               <NA>  7098  2.13
+12:                       Terre battue  6514  1.95
+13:                              Autre  2025  0.61
+14:                        Synthétique  1321  0.40
+15:                              Glace   634  0.19
+16:                               Bois   609  0.18
+17:                     Sciure/copeaux   317  0.10
+18:                              Métal   272  0.08
+19:                 Stabilisé / cendré   221  0.07
+20:         Carrelage, tomettes, pavés   206  0.06
+21:                            Hybride    77  0.02
+22:                 Terre artificielle    45  0.01
+23:                Bois (hors parquet)    39  0.01
+24:                   Sciure / copeaux    23  0.01
+25:                 Terre Artificielle    13  0.00
+26:                   Sable et gravier    13  0.00
+27:          Métal (acier, inox, etc.)     9  0.00
+28:                     Revêtement PVC     2  0.00
+29:                             tatami     2  0.00
+30:                   sable et gravier     2  0.00
+31:                             Résine     1  0.00
+32: GAZON SYNTHETIQUE ET TERRRE BATTUE     1  0.00
+33:                     BORD DE LAGUNE     1  0.00
+34:                             Enrobé     1  0.00
+35:              caillebotti plastique     1  0.00
+36:              Lino, dalle anti choc     1  0.00
+37:                             Tartan     1  0.00
+38:                      enrobé resine     1  0.00
+39:                                PVC     1  0.00
+40:                               lino     1  0.00
+41:           sol vinyl, type taraflex     1  0.00
+42:                              Tapis     1  0.00
+43:                      gravier roulé     1  0.00
+44:                               LINO     1  0.00
+45:                    Sable + gravier     1  0.00
+46:                           sol EPDM     1  0.00
+47:                  résine caoutchouc     1  0.00
+48:            PVC TARAFLEX Polyvalent     1  0.00
+                             equip_sol     N   pct
+                                <char> <int> <num>
+
+===== D. Boolean coding test =====
+
+--- equip_pmr_aire vs mobility text field ---
+   txt_mob_missing txt_mob_has_aire equip_pmr_aire      N   pct
+            <lgcl>           <lgcl>         <char>  <int> <num>
+1:           FALSE             TRUE           true 173123 51.90
+2:            TRUE               NA          false 140344 42.07
+3:           FALSE            FALSE          false  20118  6.03
+
+--- equip_pshs_aire vs sensory text field ---
+   txt_sens_missing txt_sens_has_aire equip_pshs_aire      N   pct
+             <lgcl>            <lgcl>          <char>  <int> <num>
+1:             TRUE                NA           false 272876 81.80
+2:            FALSE             FALSE           false  46496 13.94
+3:            FALSE              TRUE            true  14213  4.26
+
+--- inst_acc_handi_bool vs inst_acc_handi_type ---
+    inst_acc_handi_bool                           inst_acc_handi_type      N
+                 <char>                                        <char>  <int>
+ 1:                true                         [""Handicap moteur""] 192620
+ 2:               false                                          <NA> 128629
+ 3:                true [""Handicap moteur"", ""Handicap sensoriel""]   9566
+ 4:                true [""Handicap sensoriel"", ""Handicap moteur""]   1368
+ 5:                true                          [""Non accessible""]    532
+ 6:                true                      [""Handicap sensoriel""]    428
+ 7:                true      [""Handicap sensoriel;Handicap moteur""]    273
+ 8:                true      [""Handicap moteur;Handicap sensoriel""]    164
+ 9:                true  [""Non accessible"", ""Handicap sensoriel""]      2
+10:                true     [""Non accessible"", ""Handicap moteur""]      2
+11:                true       [""Non accessible;Handicap sensoriel""]      1
+      pct
+    <num>
+ 1: 57.74
+ 2: 38.56
+ 3:  2.87
+ 4:  0.41
+ 5:  0.16
+ 6:  0.13
+ 7:  0.08
+ 8:  0.05
+ 9:  0.00
+10:  0.00
+11:  0.00
+
+--- Equipment booleans ---
+
+ equip_eclair 
+   equip_eclair      N   pct
+         <char>  <int> <num>
+1:        false 175049 52.48
+2:         true 158536 47.52
+
+ equip_douche 
+   equip_douche      N   pct
+         <char>  <int> <num>
+1:        false 196553 58.92
+2:         true 137032 41.08
+
+ equip_sanit 
+   equip_sanit      N   pct
+        <char>  <int> <num>
+1:        true 204243 61.23
+2:       false 129342 38.77
+
+===== E. Construction year vs period =====
+   has_year has_period      N   pct
+     <lgcl>     <lgcl>  <int> <num>
+1:     TRUE       TRUE 194288 58.24
+2:    FALSE       TRUE  99884 29.94
+3:    FALSE      FALSE  25100  7.52
+4:     TRUE      FALSE  14313  4.29
+
+--- % of exact years missing, by construction period ---
+   equip_service_periode     n pct_year_missing
+                  <char> <int>            <num>
+1:             1945-1964 15998             50.8
+2:             1965-1974 28959             41.5
+3:             1975-1984 52840             39.0
+4:             1985-1994 67224             38.3
+5:             1995-2004 70762             33.3
+6:      A partir de 2005 47755              4.3
+7:            Avant 1945 10634             72.8
+
+===== F. Missingness by department =====
+       n          miss_year      miss_period      miss_mob_txt  
+ Min.   :  16   Min.   : 5.10   Min.   : 3.400   Min.   :19.60  
+ 1st Qu.:1851   1st Qu.:28.40   1st Qu.: 7.775   1st Qu.:33.85  
+ Median :2926   Median :39.20   Median :10.800   Median :41.45  
+ Mean   :3089   Mean   :38.51   Mean   :12.284   Mean   :44.55  
+ 3rd Qu.:4044   3rd Qu.:47.17   3rd Qu.:15.500   3rd Qu.:57.12  
+ Max.   :8651   Max.   :74.10   Max.   :46.000   Max.   :76.30  
+   miss_surf       pct_pmr_aire  
+ Min.   : 1.500   Min.   :18.10  
+ 1st Qu.: 8.875   1st Qu.:37.90  
+ Median :13.500   Median :50.30  
+ Mean   :16.732   Mean   :49.99  
+ 3rd Qu.:21.100   3rd Qu.:61.83  
+ Max.   :62.900   Max.   :76.90  
+
+Correlation: missing mobility text vs % 'accessible' (by department):
+
+	Spearman's rank correlation rho
+
+data:  miss_dep$miss_mob_txt and miss_dep$pct_pmr_aire
+S = 409711, p-value < 2.2e-16
+alternative hypothesis: true rho is not equal to 0
+sample estimates:
+       rho 
+-0.9516162 
+
+
+===== G. Last update year =====
+   maj_year      N
+     <char>  <int>
+1:     2025 319514
+2:     2026  14071
+
+===== H. Numeric variables =====
+
+--- equip_surf ---
+    Min.  1st Qu.   Median     Mean  3rd Qu.     Max.      NAs 
+       0      225      648    11009     1800 60000000    52091 
+    1%    99%  99.9% 
+     0  70000 999999 
+Zero: 4252 | Negative: 0 | Non-numeric text: 0 
+
+--- equip_long ---
+    Min.  1st Qu.   Median     Mean  3rd Qu.     Max.      NAs 
+     0.0     22.7     36.0   1405.7    100.0 800000.0    39086 
+   1%   99% 99.9% 
+    1 22000 76251 
+Zero: 2682 | Negative: 0 | Non-numeric text: 0 
+
+--- equip_larg ---
+     Min.   1st Qu.    Median      Mean   3rd Qu.      Max.       NAs 
+     0.00     10.00     18.00     29.24     25.00 100000.00     62904 
+   1%   99% 99.9% 
+    0   100   750 
+Zero: 4799 | Negative: 0 | Non-numeric text: 0 
+
+--- equip_service_date ---
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.     NAs 
+   1511    1982    1995    1993    2005    2027  124984 
+   1%   99% 99.9% 
+ 1935  2024  2026 
+Zero: 0 | Negative: 0 | Non-numeric text: 0 
+
+--- equip_travaux_date ---
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.     NAs 
+   1923    2003    2007    2007    2012    2027  261152 
+   1%   99% 99.9% 
+ 1986  2025  2026 
+Zero: 0 | Negative: 0 | Non-numeric text: 0 
+
+--- equip_trib_nb ---
+    Min.  1st Qu.   Median     Mean  3rd Qu.     Max.      NAs 
+    0.00     0.00     0.00    31.38     0.00 80000.00    16964 
+   1%   99% 99.9% 
+    0   500  3500 
+Zero: 294908 | Negative: 0 | Non-numeric text: 0 
+
+--- equip_vest_sport ---
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.     NAs 
+ -2.000   0.000   0.000   1.334   2.000 890.000   13165 
+   1%   99% 99.9% 
+    0    10    31 
+Zero: 179520 | Negative: 2 | Non-numeric text: 0 
+
+Construction years < 1850 or > 2026: 48 
+
+===== I. Median surface by facility family =====
+                             equip_type_famille     n pct_surf_missing
+                                         <char> <int>            <num>
+ 1:         Divers équipements Sports de nature 42122             63.6
+ 2:                      Terrain de grands jeux 41396              1.5
+ 3:                             Court de tennis 38353              1.4
+ 4:                                  Boulodrome 28662              2.9
+ 5:                     Multisports/City-stades 25601              4.3
+ 6:                           Salle multisports 18655              2.1
+ 7:                       Salle non spécialisée 16203              3.4
+ 8:                         Equipement équestre 15782              6.4
+ 9:                 Salle ou terrain spécialisé 15375              3.8
+10: Terrain extérieur de petits jeux collectifs 14601              3.8
+11: Equipement d'activités de forme et de santé 13633             12.0
+12:    Site d'activités aquatiques et nautiques 11695             27.8
+13:                     Equipement d'athlétisme  9540             32.6
+14:                             Salle de combat  7415              2.9
+15:                          Bassin de natation  6290             98.9
+16:                                  Pas de tir  5271              9.0
+17:                  Skatepark & vélo Freestyle  3640              8.3
+18:           Structure Artificielle d'Escalade  3092             16.5
+19:                              Mur et fronton  3004              3.5
+20:                      Parcours sportif/santé  2787             38.0
+21:                  Site d'activités aériennes  2496             20.6
+22:                      Equipement de cyclisme  2426             28.3
+23:                            Parcours de golf  1823             15.4
+24:          Circuit/piste de sports mécaniques  1547             12.9
+25:                   Equipement & piste de ski   699             56.5
+26:                           Site de modélisme   611              8.0
+27:                          Divers équipements   384             20.1
+28:                                     Bowling   296              4.4
+29:                    Aire de sports de glaces   186              2.2
+                             equip_type_famille     n pct_surf_missing
+                                         <char> <int>            <num>
+    median_surf
+          <num>
+ 1:     8000.00
+ 2:     6200.00
+ 3:      648.00
+ 4:      256.00
+ 5:      600.00
+ 6:      800.00
+ 7:      180.00
+ 8:     1200.00
+ 9:      180.00
+10:      420.00
+11:      126.00
+12:     2793.00
+13:      333.95
+14:      186.60
+15:      312.50
+16:      600.00
+17:      500.00
+18:      112.00
+19:      183.00
+20:     2100.00
+21:     8556.00
+22:     1500.00
+23:    20000.00
+24:     9800.00
+25:    40385.00
+26:     1950.00
+27:      936.00
+28:      506.40
+29:     1456.00
+    median_surf
+          <num>

@@ -1,0 +1,84 @@
+
+================ Q8 ================
+n = 327306 | documented: 58.5 %
+# A tibble: 19 × 6
+      OR ci_low ci_high   p_value block                              label      
+   <dbl>  <dbl>   <dbl>     <dbl> <chr>                              <chr>      
+ 1 1.23   1.19    1.26  4.35e- 44 Density (ref: large urban centres) Centres ur…
+ 2 1.14   1.11    1.18  4.29e- 17 Density (ref: large urban centres) Ceintures …
+ 3 1.06   1.02    1.09  2.24e-  3 Density (ref: large urban centres) Petites vi…
+ 4 1.08   1.05    1.11  3.82e-  9 Density (ref: large urban centres) Bourgs rur…
+ 5 0.9    0.877   0.924 2.64e- 15 Density (ref: large urban centres) Rural à ha…
+ 6 0.83   0.795   0.867 5.69e- 17 Density (ref: large urban centres) Rural à ha…
+ 7 0.974  0.935   1.01  2.11e-  1 QPV (ref: elsewhere)               Within 200…
+ 8 0.804  0.77    0.84  1.28e- 22 QPV (ref: elsewhere)               Inside QPV 
+ 9 1.25   1.21    1.28  1.98e- 44 Owner (ref: commune)               Other loca…
+10 0.889  0.858   0.922 2.12e- 10 Owner (ref: commune)               Private co…
+11 0.743  0.719   0.767 3.39e- 72 Owner (ref: commune)               Private no…
+12 0.603  0.573   0.634 8.78e- 86 Owner (ref: commune)               State / pu…
+13 0.832  0.791   0.876 1.22e- 12 Period (ref: 1985-1994)            Avant 1945 
+14 0.953  0.916   0.991 1.66e-  2 Period (ref: 1985-1994)            1945-1964  
+15 0.94   0.911   0.97  9.63e-  5 Period (ref: 1985-1994)            1965-1974  
+16 0.992  0.966   1.02  5.15e-  1 Period (ref: 1985-1994)            1975-1984  
+17 1.06   1.04    1.09  1.23e-  6 Period (ref: 1985-1994)            1995-2004  
+18 1.48   1.44    1.53  2.45e-180 Period (ref: 1985-1994)            A partir d…
+19 0.492  0.474   0.51  7.51e-312 Period (ref: 1985-1994)            Unknown    
+AIC = 362377 | McFadden pseudo-R2 = 0.184
+
+================ Q9 ================
+Departments: 101 
+ pct_documented  pct_apparent_acc pct_acc_if_doc 
+ Min.   :24.29   Min.   :22.59    Min.   :68.31  
+ 1st Qu.:43.08   1st Qu.:38.02    1st Qu.:85.94  
+ Median :58.67   Median :50.35    Median :92.02  
+ Mean   :55.77   Mean   :50.37    Mean   :90.03  
+ 3rd Qu.:66.06   3rd Qu.:61.89    3rd Qu.:94.97  
+ Max.   :80.37   Max.   :76.90    Max.   :98.73  
+
+Call:
+lm(formula = pct_apparent_acc ~ pct_documented, data = dep)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-16.980  -1.862   1.171   2.610   5.563 
+
+Coefficients:
+               Estimate Std. Error t value Pr(>|t|)    
+(Intercept)    -2.35244    1.61344  -1.458    0.148    
+pct_documented  0.94533    0.02799  33.771   <2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 4.092 on 99 degrees of freedom
+Multiple R-squared:  0.9201,	Adjusted R-squared:  0.9193 
+F-statistic:  1141 on 1 and 99 DF,  p-value: < 2.2e-16
+
+                    2.5 %   97.5 %
+(Intercept)    -5.5538658 0.848981
+pct_documented  0.8897863 1.000871
+
+Normality of residuals (Shapiro-Wilk):
+
+	Shapiro-Wilk normality test
+
+data:  resid(m_q9)
+W = 0.85917, p-value = 2.328e-08
+
+Breusch-Pagan: LM = 8.463, df = 1, p = 0.0036 (H0: constant variance)
+
+Influential departments (Cook's D > 4/n):
+# A tibble: 3 × 5
+  dep_code dep_nom        pct_documented pct_apparent_acc cooks_d
+  <chr>    <chr>                   <dbl>            <dbl>   <dbl>
+1 62       Pas-de-Calais            73.7             50.4  0.226 
+2 49       Maine-et-Loire           74.1             55.5  0.118 
+3 75       Paris                    65.6             49.4  0.0470
+
+Variance decomposition of log(apparent accessibility) across departments:
+# A tibble: 3 × 3
+  component                      variance share_pct
+  <chr>                             <dbl>     <dbl>
+1 Documentation                   0.0836       87.1
+2 Accessibility among documented  0.00628       6.5
+3 Covariance term                 0.00607       6.3
+Check: sum of components = 0.095923 vs Var(log apparent) = 0.095923

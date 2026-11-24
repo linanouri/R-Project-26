@@ -1,0 +1,7 @@
+term,OR,ci_low,ci_high,p_value
+post_2005TRUE,0.743,0.715,0.771,9.699999999999999e-54
+urban_ruralRural,1.453,1.406,1.502,1.3899999999999997e-108
+owner_groupOther local authority,1.036,0.981,1.095,0.206
+owner_groupPrivate commercial,0.735,0.691,0.782,3.16e-22
+owner_groupPrivate non-commercial,0.837,0.783,0.895,1.61e-7
+owner_groupState / public body,0.829,0.745,0.922,5.59e-4

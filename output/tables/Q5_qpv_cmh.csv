@@ -1,0 +1,11 @@
+outcome,group_a,group_b,n,n_strata,pct_a,pct_b,crude_OR,adjusted_OR,ci_low,ci_high,p_value
+Configured before 1985,Inside QPV,Elsewhere,133436,106,39.2,38.8,1.015,1.038,0.993,1.086,0.0997
+Configured before 1985,Within 200 m,Elsewhere,137778,123,44.2,38.8,1.25,1.238,1.189,1.288,7.490000000000001e-26
+Changing rooms,Inside QPV,Elsewhere,70993,40,79.2,82.8,0.793,0.632,0.583,0.685,6.46e-30
+Changing rooms,Within 200 m,Elsewhere,73396,43,83.9,82.8,1.089,0.988,0.92,1.062,0.761
+Showers,Inside QPV,Elsewhere,72848,42,70.8,77.2,0.716,0.638,0.595,0.685,1.27e-36
+Showers,Within 200 m,Elsewhere,75180,45,76.9,77.2,0.983,0.952,0.894,1.014,0.13
+Toilets,Inside QPV,Elsewhere,72848,42,82.4,86.7,0.716,0.587,0.54,0.637,1.1099999999999998e-37
+Toilets,Within 200 m,Elsewhere,75180,45,87,86.8,1.024,0.939,0.871,1.013,0.108
+Lighting (outdoor),Inside QPV,Elsewhere,40377,33,47.3,53,0.796,0.892,0.813,0.98,0.0179
+Lighting (outdoor),Within 200 m,Elsewhere,41646,30,50.9,53,0.918,0.955,0.886,1.028,0.231

@@ -1,0 +1,6 @@
+short_name,resource_id,ext,path,downloaded_at,size_mb,md5
+csv_main_335mb,ea4f5879-af40-4e3e-949d-812d6eeb5e02,csv,data/raw/csv_main_335mb.csv,2026-11-23 19:35,350.9,8ca466591655945a2a3064e44fe69a88
+csv_068mb,d8234a0a-4791-4582-bd9e-6ac795dcc71d,csv,data/raw/csv_068mb.csv,2026-11-23 19:36,71.4,bf37978d9ecd91d642ef257a10489551
+csv_174mb,82bae93a-cbe1-4f17-84a5-c5a53a8206ef,csv,data/raw/csv_174mb.csv,2026-11-23 19:37,182.4,1628fe762ad8597b9d42de1209e54ecc
+csv_100mb,17beab6a-d588-43d1-a207-2e516655916d,csv,data/raw/csv_100mb.csv,2026-11-23 19:38,105.3,5c7c3a26f1d771c200bcdbdf6e36a17f
+documentation,ad749b6c-5f6f-435f-8914-9e2734557ae6,pdf,data/raw/documentation.pdf,2026-11-23 19:38,0,0653ab6cacb06082d1a7fa6483397af5

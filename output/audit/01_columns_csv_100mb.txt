@@ -1,0 +1,12 @@
+aps_name
+aps_discipline
+aps_code
+aps_niveau
+equip_numero
+aps_pratique
+creation_dt
+maj_date
+maj_lien
+date_creation_metier
+id_unique_activite
+etat
